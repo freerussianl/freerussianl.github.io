@@ -1,0 +1,12 @@
+name: deploy
+on: [push]
+# on:
+#   push:
+#     branches:
+#       - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+      steps:
+        - name: Deploy 🚀
+          run: npm run deploy
