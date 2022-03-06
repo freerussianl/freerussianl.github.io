@@ -34,6 +34,19 @@ li {
   margin-bottom: 0.4em;
 }
 
+a {
+  color: #007cc5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #005c92;
+}
+
 @media only screen and (max-device-width: 480px) {
   body {
     max-width: 480px;
