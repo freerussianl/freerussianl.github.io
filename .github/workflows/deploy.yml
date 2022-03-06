@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - main
-      - svelte
+      - feature/svelte
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
