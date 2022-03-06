@@ -37,6 +37,7 @@
     >
   </h2>
   <h2>Upcoming events</h2>
+  -
   <ul>
     {#each upcomingEvents as { date, title, link, comment }}
       <li>
