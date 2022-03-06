@@ -7,6 +7,6 @@ on: [push]
 jobs:
   deploy:
     runs-on: ubuntu-latest
-      steps:
-        - name: Deploy 🚀
-          run: npm run deploy
+    steps:
+      - name: Deploy 🚀
+        run: npm run deploy
