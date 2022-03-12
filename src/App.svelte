@@ -10,7 +10,7 @@
 
       if (
         today.getFullYear() <= Number(yyyy) &&
-        today.getMonth() <= Number(mm) &&
+        today.getMonth() + 1 <= Number(mm) &&
         today.getDate() <= Number(dd)
       ) {
         return { ...acc, upcomingEvents: [...acc.upcomingEvents, event] };
