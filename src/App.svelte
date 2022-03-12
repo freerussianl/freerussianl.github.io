@@ -6,12 +6,12 @@
   const { upcomingEvents, pastEvents } = events.reduce(
     (acc, event) => {
       const today = new Date();
-      const eventDate = new Date(event.date);
+      const [_, dd, mm, yyyy] = event.date.match(/(\d\d)\.(\d\d)\.(\d\d\d\d)/);
 
       if (
-        today.getFullYear() <= eventDate.getFullYear() &&
-        today.getMonth() <= eventDate.getMonth() &&
-        today.getDate() <= eventDate.getDate()
+        today.getFullYear() <= Number(yyyy) &&
+        today.getMonth() <= Number(mm) &&
+        today.getDate() <= Number(dd)
       ) {
         return { ...acc, upcomingEvents: [...acc.upcomingEvents, event] };
       } else {
