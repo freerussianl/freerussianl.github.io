@@ -1,117 +1,31 @@
 <script lang="ts">
-  import events from "./resources/events.json";
-  import links from "./resources/links.json";
-  import press from "./resources/press.json";
+  import { Router, Link, Route } from "svelte-routing";
+  import Home from "./routes/Home.svelte";
+  import Blog from "./routes/Blog.svelte";
+  import Menu from "./components/Menu.svelte";
 
-  const { upcomingEvents, pastEvents } = events.reduce(
-    (acc, event) => {
-      const today = new Date();
-      const [_, dd, mm, yyyy] = event.date.match(/(\d\d)\.(\d\d)\.(\d\d\d\d)/);
-
-      if (
-        today.getFullYear() <= Number(yyyy) &&
-        today.getMonth() + 1 <= Number(mm) &&
-        today.getDate() <= Number(dd)
-      ) {
-        return { ...acc, upcomingEvents: [...acc.upcomingEvents, event] };
-      } else {
-        return { ...acc, pastEvents: [...acc.pastEvents, event] };
-      }
-    },
-    { upcomingEvents: [], pastEvents: [] }
-  );
+  export let url = "";
 </script>
 
 <main>
-  <img
-    src="/images/logo.png"
-    width="128"
-    height="128"
-    alt="Free Russia NL logo"
-  />
-  <h1>Free Russia NL</h1>
-  <h2>
-    <a href="https://solidarity.support"
-      >Support independent russian media and human rights defenders –
-      https://solidarity.support</a
-    >
-  </h2>
-  <h2>Upcoming events</h2>
-  <ul>
-    {#each upcomingEvents as { date, title, link, comment }}
-      <li>
-        {date}
-        <a href={link}>
-          {title}
-        </a>
-        {#if comment}
-          {comment}
-        {/if}
-      </li>
-    {/each}
-  </ul>
-  <h2>Petitions</h2>
-  <ul>
-    <li>
-      Petition to the MPs of the Netherlands
-      <ul style="margin-top: 0.5em">
-        <li>
-          <strong
-            ><a
-              href="https://www.petitie24.nl/petitie/3532/maak-europa-vrij-van-corruptiegeld-uit-rusland"
-              >Dutch – sign here!</a
-            ></strong
-          >
-        </li>
-        <li><a href="/docs/petition_en.pdf">English</a></li>
-        <li><a href="/docs/petition_ru.pdf">Russian</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="https://www.amnesty.nl/forms/petitie-navalny"
-        >Rusland, laat oppositieleider Navalny onmiddellijk vrij! – amnesty.nl</a
-      >
-    </li>
-  </ul>
-  <h2>Links</h2>
-  <ul>
-    {#each links as { title, link, text }}
-      <li>
-        {#if title}
-          {title}:
-        {/if}
-        <a href={link}>{text}</a>
-      </li>
-    {/each}
-  </ul>
-  <h2>Past events</h2>
-  <ul>
-    {#each pastEvents as { date, title, link, comment }}
-      <li>
-        {date}
-        <a href={link}>
-          {title}
-        </a>
-        {#if comment}
-          {comment}
-        {/if}
-      </li>
-    {/each}
-  </ul>
-  <h2>Press and media</h2>
-  <ul>
-    {#each press as { date, text, link, comment }}
-      <li>
-        {date}
-        <a href={link}>
-          {text}
-        </a>
-        {#if comment}
-          {comment}
-        {/if}
-      </li>
-    {/each}
-  </ul>
+  <Router {url}>
+    <Link to="/">
+      <img
+        src="/images/logo.png"
+        width="128"
+        height="128"
+        alt="Free Russia NL logo"
+      />
+      <h1>Free Russia NL</h1>
+    </Link>
+    <Menu />
+    <div>
+      <!-- TODO will we need this blog/:id? -->
+      <!-- <Route path="blog/:id" component="{BlogPost}" /> -->
+      <Route path="blog" component={Blog} />
+      <Route path="/"><Home /></Route>
+    </div>
+  </Router>
 </main>
 
 <style>

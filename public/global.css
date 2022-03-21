@@ -23,7 +23,8 @@ img {
 ul {
   margin-top: 0;
   margin-bottom: 2em;
-  padding-left: 1.2em;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 ul > ul {
@@ -47,6 +48,15 @@ a:visited {
   color: #005c92;
 }
 
+svg {
+  fill: #005c92;
+}
+
+.ul-horizontal > li {
+  display: inline-block;
+  padding-right: 0.5em;
+}
+
 @media only screen and (max-device-width: 480px) {
   body {
     max-width: 480px;
@@ -58,8 +68,8 @@ a:visited {
     padding-left: 1.3em;
   }
 
-  ul > ul {
+  /* ul > ul {
     padding-left: 0;
     list-style-type: none;
-  }
+  } */
 }
