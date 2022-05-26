@@ -67,11 +67,6 @@
         <li><a href="/docs/petition_ru.pdf">Russian</a></li>
       </ul>
     </li>
-    <li>
-      <a href="https://www.amnesty.nl/forms/petitie-navalny"
-        >Rusland, laat oppositieleider Navalny onmiddellijk vrij! – amnesty.nl</a
-      >
-    </li>
   </ul>
   <h2>Links</h2>
   <ul>
