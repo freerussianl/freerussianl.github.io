@@ -30,6 +30,49 @@
     alt="Free Russia NL logo"
   />
   <h1>Free Russia NL</h1>
+  <p>
+    Free Russia NL is een grassroots community van Russisch-sprekende inwoners
+    en burgers van Nederland. Onze gemeenschap ontstond in januari 2021, tijdens
+    de protestgolf in Rusland en daarbuiten tegen de aanhouding van Alexey
+    Navalny. Tot 24 februari 2022 telde ons telegramkanaal
+    <a href="https://t.me/FreeRussiaNL_important"
+      >https://t.me/FreeRussiaNL_important</a
+    > rond de 300 leden. Voor ieder van ons, binnen en buiten Rusland, veranderde
+    het leven die dag drastisch. 'Overnight' steeg ons ledenbestand tot 1200 leden
+    - voor ons een teken van grote behoefte in de Russisch-sprekende gemeenschap
+    in Nederland om zich tegen de oorlog en tegen het regime uit te spreken, steun
+    te betuigen aan Oekraïne en elkaar. Ook zien we grote belangstelling voor ons
+    standpunt vanuit de Nederlandse samenleving.
+  </p>
+  <p>
+    Gedurende de oorlogsmaanden voeren we actie, zamelen geld in voor
+    humanitaire hulp aan Oekraïne en aan de Oekraïense vluchtelingen in
+    Nederland, helpen journalisten en activisten uit Rusland die genoodzaakt
+    zijn het land te verlaten en spreken met Nederlandse media. We bereiden op
+    dit moment statuten voor om onze organisatie als stichting in Nederland te
+    registreren.
+  </p>
+  <p>De doelstellingen van FreeRussiaNL Stichting zijn:</p>
+  <p>
+    Het bevorderen van democratie, mensenrechten en de rechtsstaat, in het
+    algemeen, meer in het bijzonder:
+  </p>
+  <ul>
+    <li>
+      democratische waarden, -normen en -aanpak, met inbegrip van vrije
+      verkiezingen;
+    </li>
+    <li>
+      mensenrechten, waaronder vrijheid van meningsuiting, vrijheid van
+      vergadering en vereniging, vrijheid van gedachten en van geweten;
+    </li>
+    <li>tolerantie en non-discriminatie;</li>
+    <li>rechtsstaat en onafhankelijkheid van de rechterlijke macht.</li>
+  </ul>
+  <p>
+    Het bijeenbrengen en ondersteunen van de in Nederland en Europa gevestigde
+    Russischtalige gemeenschap die de bovengenoemde waarden deelt.
+  </p>
   <h2>
     <a href="https://solidarity.support"
       >Support independent russian media and human rights defenders –
