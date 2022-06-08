@@ -96,6 +96,14 @@
   <h2>Petitions</h2>
   <ul>
     <li>
+      <a
+        href="/docs/Oproep_voor_tijdelijk_migratiebeleid_voor_Russische_ballingen_in.pdf"
+      >
+        Open letter to Ministers Hoekstra, Yeşilgöz-Zegerius and Bruins Slot.
+        Call for Temporary Migration Policy for Russian Exiles in Wartime
+      </a>
+    </li>
+    <li>
       Petition to the MPs of the Netherlands
       <ul style="margin-top: 0.5em">
         <li>
