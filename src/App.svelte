@@ -31,6 +31,12 @@
   />
   <h1>Free Russia NL</h1>
   <p>
+    <a href="https://ru.freerussia.nl">
+      <img src="/images/flag.svg" alt="white-blue-white" width="64px">
+      Версия на русском языке
+    </a>
+  </p>
+  <p>
     Free Russia NL is een grassroots community van Russisch-sprekende inwoners
     en burgers van Nederland. Onze gemeenschap ontstond in januari 2021, tijdens
     de protestgolf in Rusland en daarbuiten tegen de aanhouding van Alexey
