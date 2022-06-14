@@ -32,7 +32,6 @@
   <h1>Free Russia NL</h1>
   <p>
     <a href="https://ru.freerussia.nl">
-      <img src="/images/flag.svg" alt="white-blue-white" width="64px">
       Версия на русском языке
     </a>
   </p>
