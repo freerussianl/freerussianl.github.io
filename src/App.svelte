@@ -40,9 +40,7 @@
     en burgers van Nederland. Onze gemeenschap ontstond in januari 2021, tijdens
     de protestgolf in Rusland en daarbuiten tegen de aanhouding van Alexey
     Navalny. Tot 24 februari 2022 telde ons telegramkanaal
-    <a href="https://t.me/FreeRussiaNL_important"
-      >https://t.me/FreeRussiaNL_important</a
-    > rond de 300 leden. Voor ieder van ons, binnen en buiten Rusland, veranderde
+    <a href="https://t.me/FreeRussiaNL">https://t.me/FreeRussiaNL</a> rond de 300 leden. Voor ieder van ons, binnen en buiten Rusland, veranderde
     het leven die dag drastisch. 'Overnight' steeg ons ledenbestand tot 1200 leden
     - voor ons een teken van grote behoefte in de Russisch-sprekende gemeenschap
     in Nederland om zich tegen de oorlog en tegen het regime uit te spreken, steun
