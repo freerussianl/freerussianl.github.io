@@ -16,7 +16,6 @@ function getLang() {
 
 (function main() {
   let lang = getLang();
-  alert(lang);
   if (lang == "nl") {
     document.location.assign("./nl.html");
   }
