@@ -31,30 +31,30 @@
   />
   <h1>Free Russia NL</h1>
   <p>
-    <a href="https://ru.freerussia.nl">
-      Версия на русском языке
-    </a>
+    <a href="https://ru.freerussia.nl"> Версия на русском языке </a>
   </p>
   <p>
     Free Russia NL is een grassroots community van Russisch-sprekende inwoners
     en burgers van Nederland. Onze gemeenschap ontstond in januari 2021, tijdens
     de protestgolf in Rusland en daarbuiten tegen de aanhouding van Alexey
     Navalny. Tot 24 februari 2022 telde ons telegramkanaal
-    <a href="https://t.me/FreeRussiaNL">https://t.me/FreeRussiaNL</a> rond de 300 leden. Voor ieder van ons, binnen en buiten Rusland, veranderde
-    het leven die dag drastisch. 'Overnight' steeg ons ledenbestand tot 1200 leden
-    - voor ons een teken van grote behoefte in de Russisch-sprekende gemeenschap
-    in Nederland om zich tegen de oorlog en tegen het regime uit te spreken, steun
-    te betuigen aan Oekraïne en elkaar. Ook zien we grote belangstelling voor ons
-    standpunt vanuit de Nederlandse samenleving.
+    <a href="https://t.me/FreeRussiaNL">https://t.me/FreeRussiaNL</a> rond de 300
+    leden. Voor ieder van ons, binnen en buiten Rusland, veranderde het leven die
+    dag drastisch. 'Overnight' steeg ons ledenbestand tot 1200 leden - voor ons een
+    teken van grote behoefte in de Russisch-sprekende gemeenschap in Nederland om
+    zich tegen de oorlog en tegen het regime uit te spreken, steun te betuigen aan
+    Oekraïne en elkaar. Ook zien we grote belangstelling voor ons standpunt vanuit
+    de Nederlandse samenleving.
   </p>
   <p>
     Gedurende de oorlogsmaanden voeren we actie, zamelen geld in voor
     humanitaire hulp aan Oekraïne en aan de Oekraïense vluchtelingen in
     Nederland, helpen journalisten en activisten uit Rusland die genoodzaakt
-    zijn het land te verlaten en spreken met Nederlandse media. We bereiden op
-    dit moment statuten voor om onze organisatie als stichting in Nederland te
-    registreren.
+    zijn het land te verlaten en spreken met Nederlandse media. In juni 2022
+    hebben we onze organisatie als stichting in Nederland geregistreerd:
   </p>
+  <p>KvK nummer: 86836935</p>
+  <p>IBAN: NL20ABNA0113016549</p>
   <p>De doelstellingen van FreeRussiaNL Stichting zijn:</p>
   <p>
     Het bevorderen van democratie, mensenrechten en de rechtsstaat, in het
