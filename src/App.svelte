@@ -34,6 +34,11 @@
     <a href="https://ru.freerussia.nl"> Версия на русском языке </a>
   </p>
   <p>
+    <a href="/statement">
+      Statement van FreeRussiaNL n.a.v. de Schengen visa-vraagstuk voor burgers van Russische Federatie
+    </a>
+  </p>
+  <p>
     Free Russia NL is een grassroots community van Russisch-sprekende inwoners
     en burgers van Nederland. Onze gemeenschap ontstond in januari 2021, tijdens
     de protestgolf in Rusland en daarbuiten tegen de aanhouding van Alexey
@@ -53,8 +58,8 @@
     zijn het land te verlaten en spreken met Nederlandse media. In juni 2022
     hebben we onze organisatie als stichting in Nederland geregistreerd:
   </p>
-  <p>KvK nummer: 86836935</p>
-  <p>IBAN: NL20ABNA0113016549</p>
+  <p>KvK nummer: <code>86836935</code></p>
+  <p>IBAN: <code>NL20ABNA0113016549</code></p>
   <p>De doelstellingen van FreeRussiaNL Stichting zijn:</p>
   <p>
     Het bevorderen van democratie, mensenrechten en de rechtsstaat, in het
