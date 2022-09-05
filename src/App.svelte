@@ -34,6 +34,9 @@
     <a href="https://ru.freerussia.nl"> Версия на русском языке </a>
   </p>
   <p>
+    <a href="/docs/beleidsplan_2022-2024.pdf"> Beleidsplan 2022-2024 </a>
+  </p>
+  <p>
     <a href="/statement">
       Statement van FreeRussiaNL n.a.v. de Schengen visa-vraagstuk voor burgers van Russische Federatie
     </a>
