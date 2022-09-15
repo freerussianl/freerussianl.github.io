@@ -63,6 +63,15 @@
   </p>
   <p>KvK nummer: <code>86836935</code></p>
   <p>IBAN: <code>NL20ABNA0113016549</code></p>
+ 
+  <p>Bestuursleden:</p>
+  <ul>
+    <li>Galya Petrenko (voorzitter)</li>
+    <li>Vera Ande (penningmeester)</li>
+    <li>Kristina Petrasova (secretaris)</li>
+    <li>Ira Heuvelman (algemeen bestuurslid)</li>
+  </ul>
+  
   <p>De doelstellingen van FreeRussiaNL Stichting zijn:</p>
   <p>
     Het bevorderen van democratie, mensenrechten en de rechtsstaat, in het
