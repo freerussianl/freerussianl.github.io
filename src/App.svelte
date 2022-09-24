@@ -117,6 +117,13 @@
   <ul>
     <li>
       <a
+        href="/docs/Call_to_introduce_a_nuanced_immigration_policy_for_the_Russian_citizens.pdf"
+      >
+        Call to introduce a nuanced immigration policy for the Russian citizens falling under conscription policies
+      </a>
+    </li>
+    <li>
+      <a
         href="/docs/Oproep_voor_tijdelijk_migratiebeleid_voor_Russische_ballingen_in.pdf"
       >
         Open letter to Ministers Hoekstra, Yeşilgöz-Zegerius and Bruins Slot.
