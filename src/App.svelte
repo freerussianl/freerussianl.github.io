@@ -61,8 +61,10 @@
     zijn het land te verlaten en spreken met Nederlandse media. In juni 2022
     hebben we onze organisatie als stichting in Nederland geregistreerd:
   </p>
-  <p>KvK nummer: <code>86836935</code></p>
-  <p>IBAN: <code>NL20ABNA0113016549</code></p>
+  <p><b>Beneficiary name:</b> <code>Free Russia Nederland</code></p>
+  <p><b>IBAN:</b> <code>NL20ABNA0113016549</code></p>
+  <p>Wij zijn een ANBI Stichting (KvK nummer: 86836935)</p>
+  <p></p>
  
   <p>Bestuursleden:</p>
   <ul>
@@ -185,6 +187,10 @@
       </li>
     {/each}
   </ul>
+  <hr/>
+  <a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/anbi-status-controleren">
+    <img src="./images/logo-anbi.svg" width="53" alt="anbi logo">
+  </a>
 </main>
 
 <style>
