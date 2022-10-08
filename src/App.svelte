@@ -23,13 +23,15 @@
 </script>
 
 <main>
-  <img
-    src="/images/logo.png"
-    width="128"
-    height="128"
-    alt="Free Russia NL logo"
-  />
-  <h1>Free Russia NL</h1>
+  <header>
+    <img
+      src="/images/logo.png"
+      width="128"
+      height="128"
+      alt="Free Russia NL logo"
+    />
+    <h1>Free Russia NL</h1>
+  </header>
   <p>
     <a href="https://ru.freerussia.nl"> Версия на русском языке </a>
   </p>
@@ -194,4 +196,8 @@
 </main>
 
 <style>
+  header {
+    display: flex;
+    align-items: center;
+  }
 </style>
