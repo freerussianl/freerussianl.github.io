@@ -66,7 +66,7 @@
   <p><b>Beneficiary name:</b> <code>Free Russia Nederland</code></p>
   <p><b>IBAN:</b> <code>NL20ABNA0113016549</code></p>
   <p>Wij zijn een ANBI Stichting (KvK nummer: 86836935)</p>
-  <p></p>
+  <p><a href="https://freerussia.nl/tikkie">Doneer via tikkie</a></p>
  
   <p>Bestuursleden:</p>
   <ul>
