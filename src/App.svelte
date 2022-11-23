@@ -33,9 +33,6 @@
     <h1>Free Russia NL</h1>
   </header>
   <p>
-    <a href="https://ru.freerussia.nl"> Версия на русском языке </a>
-  </p>
-  <p>
     <a href="/docs/beleidsplan_2022-2024.pdf"> Beleidsplan 2022-2024 </a>
   </p>
   <p>
