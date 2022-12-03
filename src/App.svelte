@@ -25,7 +25,7 @@
 <main>
   <header>
     <img
-      src="/images/logo.png"
+      src="/images/logo_rainbow.png"
       width="128"
       height="128"
       alt="Free Russia NL logo"
