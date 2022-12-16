@@ -71,6 +71,9 @@
     <li>Vera Ande (penningmeester)</li>
     <li>Kristina Petrasova (secretaris)</li>
     <li>Ira Heuvelman (algemeen bestuurslid)</li>
+    <li>Svetlana Pylaeva (algemeen bestuurslid)</li>
+    <li>Alexandra Molokostova (algemeen bestuurslid)</li>
+    <li>Mikhail Volkov  (algemeen bestuurslid)</li>
   </ul>
   
   <p>De doelstellingen van FreeRussiaNL Stichting zijn:</p>
