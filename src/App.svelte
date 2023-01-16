@@ -67,14 +67,14 @@
  
   <p>Bestuursleden:</p>
   <ul>
-    <li>Galya Petrenko (voorzitter)</li>
-    <li>Vera Ande (penningmeester)</li>
+    <li>Svetlana Pylaeva (voorzitter)</li>
     <li>Kristina Petrasova (secretaris)</li>
-    <li>Ira Heuvelman (algemeen bestuurslid)</li>
-    <li>Svetlana Pylaeva (algemeen bestuurslid)</li>
-    <li>Alexandra Molokostova (algemeen bestuurslid)</li>
-    <li>Mikhail Volkov  (algemeen bestuurslid)</li>
+    <li>Ira Heuvelman (penningmeester)</li>
   </ul>
+  
+  <p>
+    Press enquiries: press@freerussia.nl
+  </p>
   
   <p>De doelstellingen van FreeRussiaNL Stichting zijn:</p>
   <p>
