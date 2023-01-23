@@ -33,6 +33,11 @@
     <h1>Free Russia NL</h1>
   </header>
   <p>
+    <a href="/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"> 
+      Open brief aan de Nederlandse regering n.a.v. een genuanceerd immigratiebeleid voor 
+      de Russische burgers die onder de voortdurende mobilisatie in Rusland vallen. </a>
+  </p>
+  <p>
     <a href="/docs/beleidsplan_2022-2024.pdf"> Beleidsplan 2022-2024 </a>
   </p>
   <p>
