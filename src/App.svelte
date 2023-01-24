@@ -126,6 +126,15 @@
   <ul>
     <li>
       <a
+        href="/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"
+      >
+        Open letter to the Government of The Netherlands, to the State Secretary Van den Burg
+        regarding a nuanced immigration policy for the Russian citizens 
+        falling under the continuous mobilization. (NL)
+      </a>
+    </li>
+    <li>
+      <a
         href="/docs/Call_to_introduce_a_nuanced_immigration_policy_for_the_Russian_citizens.pdf"
       >
         Call to introduce a nuanced immigration policy for the Russian citizens falling under conscription policies
