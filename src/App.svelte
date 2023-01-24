@@ -34,8 +34,8 @@
   </header>
   <p>
     <a href="/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"> 
-      Open brief aan de Nederlandse regering n.a.v. een genuanceerd immigratiebeleid voor 
-      de Russische burgers die onder de voortdurende mobilisatie in Rusland vallen. </a>
+      Oproep tot een genuanceerd immigratiebeleid voor de Russische burgers 
+      die onder de voortdurende mobilisatie in Rusland vallen. </a>
   </p>
   <p>
     <a href="/docs/beleidsplan_2022-2024.pdf"> Beleidsplan 2022-2024 </a>
@@ -128,9 +128,8 @@
       <a
         href="/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"
       >
-        Open letter to the Government of The Netherlands, to the State Secretary Van den Burg
-        regarding a nuanced immigration policy for the Russian citizens 
-        falling under the continuous mobilization. (NL)
+        Oproep tot een genuanceerd immigratiebeleid voor de Russische burgers
+        die onder de voortdurende mobilisatie in Rusland vallen.
       </a>
     </li>
     <li>
