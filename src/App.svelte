@@ -33,16 +33,20 @@
     <h1>Free Russia NL</h1>
   </header>
   <p>
-    <a href="/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"> 
-      Oproep tot een genuanceerd immigratiebeleid voor de Russische burgers 
-      die onder de voortdurende mobilisatie in Rusland vallen. </a>
+    <a
+      href="/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"
+    >
+      Oproep tot een genuanceerd immigratiebeleid voor de Russische burgers die
+      onder de voortdurende mobilisatie in Rusland vallen.
+    </a>
   </p>
   <p>
     <a href="/docs/beleidsplan_2022-2024.pdf"> Beleidsplan 2022-2024 </a>
   </p>
   <p>
     <a href="/statement">
-      Statement van FreeRussiaNL n.a.v. de Schengen visa-vraagstuk voor burgers van Russische Federatie
+      Statement van FreeRussiaNL n.a.v. de Schengen visa-vraagstuk voor burgers
+      van Russische Federatie
     </a>
   </p>
   <p>
@@ -69,18 +73,33 @@
   <p><b>IBAN:</b> <code>NL20ABNA0113016549</code></p>
   <p>Wij zijn een ANBI Stichting (KvK nummer: 86836935)</p>
   <p><a href="https://freerussia.nl/tikkie">Doneer via tikkie</a></p>
- 
+
+  <form action="https://www.paypal.com/donate" method="post" target="_top">
+    <input type="hidden" name="hosted_button_id" value="CQ4S4K5TN8RY8" />
+    <input
+      type="image"
+      src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+      name="submit"
+      title="PayPal - The safer, easier way to pay online!"
+      alt="Donate with PayPal button"
+    />
+    <img
+      alt=""
+      src="https://www.paypal.com/en_NL/i/scr/pixel.gif"
+      width="1"
+      height="1"
+    />
+  </form>
+
   <p>Bestuursleden:</p>
   <ul>
     <li>Svetlana Pylaeva (voorzitter)</li>
     <li>Kristina Petrasova (secretaris)</li>
     <li>Ira Heuvelman (penningmeester)</li>
   </ul>
-  
-  <p>
-    Press enquiries: press@freerussia.nl
-  </p>
-  
+
+  <p>Press enquiries: press@freerussia.nl</p>
+
   <p>De doelstellingen van FreeRussiaNL Stichting zijn:</p>
   <p>
     Het bevorderen van democratie, mensenrechten en de rechtsstaat, in het
@@ -136,7 +155,8 @@
       <a
         href="/docs/Call_to_introduce_a_nuanced_immigration_policy_for_the_Russian_citizens.pdf"
       >
-        Call to introduce a nuanced immigration policy for the Russian citizens falling under conscription policies
+        Call to introduce a nuanced immigration policy for the Russian citizens
+        falling under conscription policies
       </a>
     </li>
     <li>
@@ -202,9 +222,11 @@
       </li>
     {/each}
   </ul>
-  <hr/>
-  <a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/anbi-status-controleren">
-    <img src="./images/logo-anbi.svg" width="53" alt="anbi logo">
+  <hr />
+  <a
+    href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/anbi-status-controleren"
+  >
+    <img src="./images/logo-anbi.svg" width="53" alt="anbi logo" />
   </a>
 </main>
 
