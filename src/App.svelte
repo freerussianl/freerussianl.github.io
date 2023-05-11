@@ -121,12 +121,6 @@
     Het bijeenbrengen en ondersteunen van de in Nederland en Europa gevestigde
     Russischtalige gemeenschap die de bovengenoemde waarden deelt.
   </p>
-  <h2>
-    <a href="https://solidarity.support"
-      >Support independent russian media and human rights defenders –
-      https://solidarity.support</a
-    >
-  </h2>
   <h2>Upcoming events</h2>
   <ul>
     {#each upcomingEvents as { date, title, link, comment }}
