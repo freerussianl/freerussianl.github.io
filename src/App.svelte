@@ -34,10 +34,9 @@
   </header>
   <p>
     <a
-      href="/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"
+      href="https://www.change.org/p/декларация-российских-демократических-сил"
     >
-      Oproep tot een genuanceerd immigratiebeleid voor de Russische burgers die
-      onder de voortdurende mobilisatie in Rusland vallen.
+      Verklaring van de Russische Democratische Initiatieven, Berlijn, 30 april 2023
     </a>
   </p>
   <p>
