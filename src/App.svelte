@@ -97,7 +97,7 @@
     <li>Ira Heuvelman (penningmeester)</li>
   </ul>
 
-  <p>Press enquiries: press@freerussia.nl</p>
+  <p>Communication, press and public events: <a href="mailto:press@freerussia.nl">press@freerussia.nl</a></p>
 
   <p>De doelstellingen van FreeRussiaNL Stichting zijn:</p>
   <p>
@@ -201,7 +201,8 @@
       </li>
     {/each}
   </ul>
-  <h2>Press and media</h2>
+  <h2>
+    and media</h2>
   <ul>
     {#each press as { date, text, link, comment }}
       <li>
