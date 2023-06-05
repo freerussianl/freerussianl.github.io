@@ -20,17 +20,29 @@
     },
     { upcomingEvents: [], pastEvents: [] }
   );
+
+  let donateRef;
+
+  const scrollToDonate = () => {
+    donateRef.scrollIntoView({ behavior: 'smooth' });
+  }
 </script>
 
 <main>
   <header>
     <img
-      src="/images/logo_rainbow.png"
-      width="128"
-      height="128"
+      src="/images/logo_full.svg"
       alt="Free Russia NL logo"
+      class="logo"
     />
-    <h1>Free Russia NL</h1>
+    <div class="button_container">
+    <button class="header_donate" on:click={scrollToDonate}><img
+      src="/images/header_donate.svg"
+      alt="Donate"
+      class="img_donate"
+    /></button>
+    <button class="header_language">NL</button>
+    </div>
   </header>
   <p>
     <a
@@ -68,7 +80,8 @@
     zijn het land te verlaten en spreken met Nederlandse media. In juni 2022
     hebben we onze organisatie als stichting in Nederland geregistreerd:
   </p>
-  <p><b>Beneficiary name:</b> <code>Free Russia Nederland</code></p>
+    <!-- Donate section content here -->
+  <p bind:this={donateRef}><b>Beneficiary name:</b> <code>Free Russia Nederland</code></p>
   <p><b>IBAN:</b> <code>NL20ABNA0113016549</code></p>
   <p>Wij zijn een ANBI Stichting (KvK nummer: 86836935)</p>
   <p><a href="https://freerussia.nl/tikkie">Doneer via tikkie</a></p>
@@ -223,10 +236,3 @@
     <img src="./images/logo-anbi.svg" width="53" alt="anbi logo" />
   </a>
 </main>
-
-<style>
-  header {
-    display: flex;
-    align-items: center;
-  }
-</style>

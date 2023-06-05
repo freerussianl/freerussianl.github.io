@@ -1,10 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
-  max-width: 640px;
+  max-width: 480px;
   padding: 1em;
   font-size: 1.2em;
   line-height: 1.3;
-  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: auto;
+}
+
+main {
+  padding: 2%;
+}
+
+header {
+  display: flex;
+}
+
+.button_container {
+  margin-left: auto; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header_donate {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  border: 0;
+  background-color: black;
+  cursor: pointer;
+}
+
+.header_language {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #0097DC;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  cursor: pointer;
 }
 
 h1 {
