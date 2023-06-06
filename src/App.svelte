@@ -98,20 +98,109 @@
     </div>
   </div>
   <div>
-    <h1>Bestuursleden</h1>
+    <h1 class="maintitle">Bestuursleden</h1>
     <div class="about">
+      <p>
+        <span class="black">Svetlana Pylaeva — </span><span class="blue"
+          >voorzitter</span
+        >
+      </p>
+      <p>
+        <span class="black">Kristina Petrasova — </span><span class="blue"
+          >secretaris</span
+        >
+      </p>
+      <p>
+        <span class="black">Ira Heuvelman — </span><span class="blue"
+          >penningmeester</span
+        >
+      </p>
+    </div>
+  </div>
+  <div>
+    <h1 class="maintitle">Documenten</h1>
+    <div class="documents">
+      <p class="text">
+        Oproep tot een genuanceerd immigratiebeleid voor de Russische burgers
+        die onder de voortdurende mobilisatie in Rusland vallen.
+      </p>
+      <div class="button_container">
+        <span class="blue black">Download PDF</span>
+        <a
+          href="http://localhost:8080/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"
+        >
+          <img src="/images/download.svg" alt="download" />
+        </a>
+      </div>
+      <hr />
+      <p class="text">
+        Beleidsplan 2022-2024 - Bringing together and supporting the
+        Russian-speaking community in the Netherlands and Europe who share these
+        values.
+      </p>
+      <div class="button_container">
+        <span class="blue black">Download PDF</span>
+        <a href="http://localhost:8080/docs/beleidsplan_2022-2024.pdf">
+          <img src="/images/download.svg" alt="download" />
+        </a>
+      </div>
+      <hr />
+      <p class="text">
+        Statement van FreeRussiaNL n.a.v. de Schengen visa-vraagstuk voor
+        burgers van Russische Federatie
+      </p>
+      <div class="button_container">
+        <span class="blue black">Download PDF</span>
+        <a href="http://localhost:8080/statement">
+          <img src="/images/download.svg" alt="download" />
+        </a>
+      </div>
+      <hr />
+      <p class="text">
+        Call to introduce a nuanced immigration policy for the Russian citizens
+        falling under conscription policies
+      </p>
+      <div class="button_container">
+        <span class="blue black">Download PDF</span>
+        <a
+          href="http://localhost:8080/docs/Call_to_introduce_a_nuanced_immigration_policy_for_the_Russian_citizens.pdf"
+        >
+          <img src="/images/download.svg" alt="download" />
+        </a>
+      </div>
+      <hr />
+      <p class="text">Petition to the MPs of the Netherlands</p>
+      <img src="/images/nl.svg" alt="nl" />
+      <a
+        href="https://www.petitie24.nl/petitie/3532/maak-europa-vrij-van-corruptiegeld-uit-rusland"
+        ><span class="blue black">Dutch</span>
+      </a><span class="black">— Sign here!</span><br /><br />
+      <img src="/images/uk.svg" alt="uk" />
+      <a href="http://localhost:8080/docs/petition_en.pdf"
+        ><span class="blue black">English</span><br /><br />
+      </a>
+      <img src="/images/ru.svg" alt="ru" />
+      <a href="http://localhost:8080/docs/petition_ru.pdf"
+        ><span class="blue black">Russian</span><br /><br />
+      </a>
+    </div>
+  </div>
+  <div>
+    <h1 class="maintitle">Samenwerking</h1>
+    <div class="about">
+      <h4 class="title">Vrijwilliger worden</h4>
       <h4 class="bold">
-        Svetlana Pylaeva -
-        <h4 class="title">voorzitter</h4>
+        Heb je interesse om als vrijwilliger mee te werken aan enkele van onze
+        activiteiten?
       </h4>
-      <h4 class="bold">
-        Kristina Petrasova -
-        <h4 class="title">secretaris</h4>
-      </h4>
-      <h4 class="bold">
-        Ira Heuvelman -
-        <h4 class="title">penningmeester</h4>
-      </h4>
+      <p class="text">
+        Geweldig! Wij verwelkomen enthousiaste mensen met verschillende
+        vaardigheden en kennis. Lees over onze activiteiten, schat je vrije tijd
+        en energie in, en schrijf ons
+      </p>
+      <img src="/images/envelope.svg" alt="envelope" />
+      <span class="bold">&nbsp;&nbsp;&nbsp;info@freerussia.nl </span><br /><br
+      />
     </div>
   </div>
   <p>
