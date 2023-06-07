@@ -21,6 +21,11 @@
     { upcomingEvents: [], pastEvents: [] }
   );
 
+  const copyText = () => {
+    const textToCopy = document.getElementById("textToCopy").innerText;
+    navigator.clipboard.writeText(textToCopy);
+  };
+
   let donateRef;
 
   const scrollToDonate = () => {
@@ -202,7 +207,78 @@
       <span class="bold">&nbsp;&nbsp;&nbsp;info@freerussia.nl </span><br /><br
       />
     </div>
+    <div class="about" bind:this={donateRef}>
+      <h4 class="title">Financieel ondersteunen</h4>
+      <p class="text">
+        Wij zijn een rechtspersoon in Nederland en hebben het recht donaties van
+        bedrijven en particulieren te aanvaarden. Alle ingezamelde fondsen
+        zullen worden gebruikt voor:<br />
+        - ontwikkeling van Free Russia NL<br />
+        - Hulp voor vluchtelingen uit Rusland, Oekraïne of Wit-Rusland<br />
+        - Educatieve activiteiten in Nederland en online<br />
+      </p>
+      <span class="black">Beneficiary name:</span>
+      <span class="text">Free Russia Nederland</span>
+      <br />
+      <span class="black">IBAN:</span>
+      <span id="textToCopy" on:click={copyText}>NL20ABNA0113016549</span><span class="text">&nbsp;&nbsp;&nbsp;(Klik om te kopiëren)</span>
+      <br />
+      <p class="text">
+        Wij zijn een ANBI Stichting<br />
+        (KvK nummer: 86836935)<br />
+      </p>
+      
+      <form action="https://www.paypal.com/donate" method="post" target="_blank">
+        <input type="hidden" name="hosted_button_id" value="CQ4S4K5TN8RY8" />
+        <input
+          type="image"
+          src="/images/paypal.png"
+          name="submit"
+          title="PayPal - The safer, easier way to pay online!"
+          alt="Donate with PayPal button"
+          class="paypal-image"
+        />
+      </form>
+      <a
+        href="https://freerussia.nl/tikkie"
+        >
+        <img src="/images/tikkie.png" alt="Tikkie" class="tikkie"/>
+      </a>
+    </div>
   </div>
+  <div>
+    <h1 class="maintitle">Pers en media</h1>
+    <div class="documents">
+      <p>
+        ...
+      </p>
+    </div>
+  </div>
+  <div>
+    <h1 class="maintitle">Upcoming and past events</h1>
+    <div class="about">
+      <p>
+        ...
+      </p>
+    </div>
+  </div>
+  <div>
+    <h1 class="maintitle">Blog</h1>
+    <div class="documents">
+      <h4 class="title">Deel je verhaal</h4>
+      <h4 class="bold">
+        Hier publiceren we artikelen van onze communityleden en abonnees. 
+      </h4>
+      <p class="text">
+        Interesse? Stuur uw artikel naar:
+      </p>
+      <img src="/images/envelope.svg" alt="envelope" />
+      <span class="bold">&nbsp;&nbsp;&nbsp;editorial@freerussia.nl </span><br /><br
+      />
+    </div>
+    <div>
+      <h1 class="maintitle">Volg ons via</h1>
+    </div>
   <p>
     <a
       href="https://www.change.org/p/декларация-российских-демократических-сил"
@@ -243,7 +319,7 @@
     hebben we onze organisatie als stichting in Nederland geregistreerd:
   </p>
   <!-- Donate section content here -->
-  <p bind:this={donateRef}>
+  <p>
     <b>Beneficiary name:</b> <code>Free Russia Nederland</code>
   </p>
   <p><b>IBAN:</b> <code>NL20ABNA0113016549</code></p>

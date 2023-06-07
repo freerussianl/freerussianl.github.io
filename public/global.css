@@ -101,6 +101,14 @@ header {
   color: #0097DC;
 }
 
+.paypal-image {
+  max-width: 100%;
+}
+
+.tikkie {
+  margin: 10px 0 15px 0;
+}
+
 hr {
   height: 3px;
   background-color: white;
