@@ -109,6 +109,10 @@ header {
   margin: 10px 0 15px 0;
 }
 
+.links {
+  margin: 15px 30px;
+}
+
 hr {
   height: 3px;
   background-color: white;
@@ -145,7 +149,7 @@ li {
 }
 
 a {
-  color: #007cc5;
+  color: black;
   text-decoration: none;
 }
 

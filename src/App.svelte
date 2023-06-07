@@ -132,7 +132,7 @@
       <div class="button_container">
         <span class="blue black">Download PDF</span>
         <a
-          href="http://localhost:8080/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"
+          href="/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"
         >
           <img src="/images/download.svg" alt="download" />
         </a>
@@ -145,7 +145,7 @@
       </p>
       <div class="button_container">
         <span class="blue black">Download PDF</span>
-        <a href="http://localhost:8080/docs/beleidsplan_2022-2024.pdf">
+        <a href="/docs/beleidsplan_2022-2024.pdf">
           <img src="/images/download.svg" alt="download" />
         </a>
       </div>
@@ -156,7 +156,7 @@
       </p>
       <div class="button_container">
         <span class="blue black">Download PDF</span>
-        <a href="http://localhost:8080/statement">
+        <a href="/statement">
           <img src="/images/download.svg" alt="download" />
         </a>
       </div>
@@ -168,7 +168,7 @@
       <div class="button_container">
         <span class="blue black">Download PDF</span>
         <a
-          href="http://localhost:8080/docs/Call_to_introduce_a_nuanced_immigration_policy_for_the_Russian_citizens.pdf"
+          href="/docs/Call_to_introduce_a_nuanced_immigration_policy_for_the_Russian_citizens.pdf"
         >
           <img src="/images/download.svg" alt="download" />
         </a>
@@ -181,11 +181,11 @@
         ><span class="blue black">Dutch</span>
       </a><span class="black">— Sign here!</span><br /><br />
       <img src="/images/uk.svg" alt="uk" />
-      <a href="http://localhost:8080/docs/petition_en.pdf"
+      <a href="/docs/petition_en.pdf"
         ><span class="blue black">English</span><br /><br />
       </a>
       <img src="/images/ru.svg" alt="ru" />
-      <a href="http://localhost:8080/docs/petition_ru.pdf"
+      <a href="/docs/petition_ru.pdf"
         ><span class="blue black">Russian</span><br /><br />
       </a>
     </div>
@@ -204,7 +204,7 @@
         en energie in, en schrijf ons
       </p>
       <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold">&nbsp;&nbsp;&nbsp;info@freerussia.nl </span><br /><br
+      <span class="bold">&nbsp;&nbsp;&nbsp;<a href="mailto:info@freerussia.nl">info@freerussia.nl</a></span><br /><br
       />
     </div>
     <div class="about" bind:this={donateRef}>
@@ -221,14 +221,18 @@
       <span class="text">Free Russia Nederland</span>
       <br />
       <span class="black">IBAN:</span>
-      <span id="textToCopy" on:click={copyText}>NL20ABNA0113016549</span><span class="text">&nbsp;&nbsp;&nbsp;(Klik om te kopiëren)</span>
+      <span id="textToCopy" on:click={copyText}>NL20ABNA0113016549</span>
       <br />
       <p class="text">
         Wij zijn een ANBI Stichting<br />
         (KvK nummer: 86836935)<br />
       </p>
-      
-      <form action="https://www.paypal.com/donate" method="post" target="_blank">
+
+      <form
+        action="https://www.paypal.com/donate"
+        method="post"
+        target="_blank"
+      >
         <input type="hidden" name="hosted_button_id" value="CQ4S4K5TN8RY8" />
         <input
           type="image"
@@ -239,27 +243,21 @@
           class="paypal-image"
         />
       </form>
-      <a
-        href="https://freerussia.nl/tikkie"
-        >
-        <img src="/images/tikkie.png" alt="Tikkie" class="tikkie"/>
+      <a href="https://freerussia.nl/tikkie">
+        <img src="/images/tikkie.png" alt="Tikkie" class="tikkie" />
       </a>
     </div>
   </div>
   <div>
     <h1 class="maintitle">Pers en media</h1>
     <div class="documents">
-      <p>
-        ...
-      </p>
+      <p>...</p>
     </div>
   </div>
   <div>
     <h1 class="maintitle">Upcoming and past events</h1>
     <div class="about">
-      <p>
-        ...
-      </p>
+      <p>...</p>
     </div>
   </div>
   <div>
@@ -267,215 +265,246 @@
     <div class="documents">
       <h4 class="title">Deel je verhaal</h4>
       <h4 class="bold">
-        Hier publiceren we artikelen van onze communityleden en abonnees. 
+        Hier publiceren we artikelen van onze communityleden en abonnees.
       </h4>
-      <p class="text">
-        Interesse? Stuur uw artikel naar:
-      </p>
+      <p class="text">Interesse? Stuur uw artikel naar:</p>
       <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold">&nbsp;&nbsp;&nbsp;editorial@freerussia.nl </span><br /><br
-      />
+      <span class="bold">&nbsp;&nbsp;&nbsp;<a href="mailto:editorial@freerussia.nl">editorial@freerussia.nl</a></span><br
+      /><br />
     </div>
     <div>
       <h1 class="maintitle">Volg ons via</h1>
+      <div class="links">
+        <div class="button_container">
+          <a href="https://t.me/FreeRussiaNL"
+            ><img src="/images/tg.png" alt="Telegram" />
+          </a>
+          <a href="https://facebook.com/FreeRussiaNL"
+            ><img src="/images/fb.png" alt="Facebook" />
+          </a>
+          <a href="https://instagram.com/freerussia.nl"
+            ><img src="/images/ig.png" alt="Instagram" />
+          </a>
+          <a href="https://twitter.com/russia_nl"
+            ><img src="/images/tw.png" alt="Twitter" />
+          </a>
+          <a href="https://www.youtube.com/channel/UCU9wy4JM-OagJfIhWI4U9MA"
+            ><img src="/images/ut.png" alt="Youtube" />
+          </a>
+          <a href="/links"
+          ><img src="/images/links.png" alt="Links" />
+        </a>
+        </div>
+      </div>
     </div>
-  <p>
+    <div class="links">
+      <hr>
     <a
-      href="https://www.change.org/p/декларация-российских-демократических-сил"
-    >
-      Verklaring van de Russische Democratische Initiatieven, Berlijn, 30 april
-      2023
-    </a>
-  </p>
-  <p>
-    <a href="/docs/beleidsplan_2022-2024.pdf"> Beleidsplan 2022-2024 </a>
-  </p>
-  <p>
-    <a href="/statement">
-      Statement van FreeRussiaNL n.a.v. de Schengen visa-vraagstuk voor burgers
-      van Russische Federatie
-    </a>
-  </p>
-  <p>
-    Free Russia NL is een grassroots community van Russisch-sprekende inwoners
-    en burgers van Nederland. Onze gemeenschap ontstond in januari 2021. 24
-    februari 2022 veranderde voor ieder van ons, binnen en buiten Rusland, het
-    leven drastisch. 'Overnight' steeg ons ledenbestand tot 1200 leden - voor
-    ons een teken van grote behoefte in de Russisch-sprekende gemeenschap in
-    Nederland om zich tegen de oorlog en tegen het regime uit te spreken, steun
-    te betuigen aan Oekraïne en elkaar. Op dit moment telt ons telegramkanaal <a
-      href="https://t.me/FreeRussiaNL">https://t.me/FreeRussiaNL</a
-    > rond de 2.500 leden.
-  </p>
-  <p>
-    Ook zien we grote belangstelling voor ons standpunt vanuit de Nederlandse
-    samenleving.
-  </p>
-  <p>
-    Gedurende de oorlogsmaanden voeren we actie, zamelen geld in voor
-    humanitaire hulp aan Oekraïne en aan de Oekraïense vluchtelingen in
-    Nederland, helpen journalisten en activisten uit Rusland die genoodzaakt
-    zijn het land te verlaten en spreken met Nederlandse media. In juni 2022
-    hebben we onze organisatie als stichting in Nederland geregistreerd:
-  </p>
-  <!-- Donate section content here -->
-  <p>
-    <b>Beneficiary name:</b> <code>Free Russia Nederland</code>
-  </p>
-  <p><b>IBAN:</b> <code>NL20ABNA0113016549</code></p>
-  <p>Wij zijn een ANBI Stichting (KvK nummer: 86836935)</p>
-  <p><a href="https://freerussia.nl/tikkie">Doneer via tikkie</a></p>
-
-  <form action="https://www.paypal.com/donate" method="post" target="_top">
-    <input type="hidden" name="hosted_button_id" value="CQ4S4K5TN8RY8" />
-    <input
-      type="image"
-      src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-      name="submit"
-      title="PayPal - The safer, easier way to pay online!"
-      alt="Donate with PayPal button"
-    />
-    <img
-      alt=""
-      src="https://www.paypal.com/en_NL/i/scr/pixel.gif"
-      width="1"
-      height="1"
-    />
-  </form>
-
-  <p>Bestuursleden:</p>
-  <ul>
-    <li>Svetlana Pylaeva (voorzitter)</li>
-    <li>Kristina Petrasova (secretaris)</li>
-    <li>Ira Heuvelman (penningmeester)</li>
-  </ul>
-
-  <p>
-    Communication, press and public events: <a href="mailto:press@freerussia.nl"
-      >press@freerussia.nl</a
-    >
-  </p>
-
-  <p>De doelstellingen van FreeRussiaNL Stichting zijn:</p>
-  <p>
-    Het bevorderen van democratie, mensenrechten en de rechtsstaat, in het
-    algemeen, meer in het bijzonder:
-  </p>
-  <ul>
-    <li>
-      democratische waarden, -normen en -aanpak, met inbegrip van vrije
-      verkiezingen;
-    </li>
-    <li>
-      mensenrechten, waaronder vrijheid van meningsuiting, vrijheid van
-      vergadering en vereniging, vrijheid van gedachten en van geweten;
-    </li>
-    <li>tolerantie en non-discriminatie;</li>
-    <li>rechtsstaat en onafhankelijkheid van de rechterlijke macht.</li>
-  </ul>
-  <p>
-    Het bijeenbrengen en ondersteunen van de in Nederland en Europa gevestigde
-    Russischtalige gemeenschap die de bovengenoemde waarden deelt.
-  </p>
-  <h2>Upcoming events</h2>
-  <ul>
-    {#each upcomingEvents as { date, title, link, comment }}
-      <li>
-        {date}
-        <a href={link}>
-          {title}
-        </a>
-        {#if comment}
-          {comment}
-        {/if}
-      </li>
-    {/each}
-  </ul>
-  <h2>Petitions</h2>
-  <ul>
-    <li>
-      <a
-        href="/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"
-      >
-        Oproep tot een genuanceerd immigratiebeleid voor de Russische burgers
-        die onder de voortdurende mobilisatie in Rusland vallen.
-      </a>
-    </li>
-    <li>
-      <a
-        href="/docs/Call_to_introduce_a_nuanced_immigration_policy_for_the_Russian_citizens.pdf"
-      >
-        Call to introduce a nuanced immigration policy for the Russian citizens
-        falling under conscription policies
-      </a>
-    </li>
-    <li>
-      <a
-        href="/docs/Oproep_voor_tijdelijk_migratiebeleid_voor_Russische_ballingen_in.pdf"
-      >
-        Open letter to Ministers Hoekstra, Yeşilgöz-Zegerius and Bruins Slot.
-        Call for Temporary Migration Policy for Russian Exiles in Wartime
-      </a>
-    </li>
-    <li>
-      Petition to the MPs of the Netherlands
-      <ul style="margin-top: 0.5em">
-        <li>
-          <strong
-            ><a
-              href="https://www.petitie24.nl/petitie/3532/maak-europa-vrij-van-corruptiegeld-uit-rusland"
-              >Dutch – sign here!</a
-            ></strong
-          >
-        </li>
-        <li><a href="/docs/petition_en.pdf">English</a></li>
-        <li><a href="/docs/petition_ru.pdf">Russian</a></li>
-      </ul>
-    </li>
-  </ul>
-  <h2>Links</h2>
-  <ul>
-    {#each links as { title, link, text }}
-      <li>
-        {#if title}
-          {title}:
-        {/if}
-        <a href={link}>{text}</a>
-      </li>
-    {/each}
-  </ul>
-  <h2>Past events</h2>
-  <ul>
-    {#each pastEvents as { date, title, link, comment }}
-      <li>
-        {date}
-        <a href={link}>
-          {title}
-        </a>
-        {#if comment}
-          {comment}
-        {/if}
-      </li>
-    {/each}
-  </ul>
-  <h2>and media</h2>
-  <ul>
-    {#each press as { date, text, link, comment }}
-      <li>
-        {date}
-        <a href={link}>
-          {text}
-        </a>
-        {#if comment}
-          {comment}
-        {/if}
-      </li>
-    {/each}
-  </ul>
-  <hr />
-  <a
     href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/anbi-status-controleren"
   >
     <img src="./images/logo-anbi.svg" width="53" alt="anbi logo" />
   </a>
+  </div>
+      <!-- The end of new version -->
+    <p>
+      <a
+        href="https://www.change.org/p/декларация-российских-демократических-сил"
+      >
+        Verklaring van de Russische Democratische Initiatieven, Berlijn, 30
+        april 2023
+      </a>
+    </p>
+    <p>
+      <a href="/docs/beleidsplan_2022-2024.pdf"> Beleidsplan 2022-2024 </a>
+    </p>
+    <p>
+      <a href="/statement">
+        Statement van FreeRussiaNL n.a.v. de Schengen visa-vraagstuk voor
+        burgers van Russische Federatie
+      </a>
+    </p>
+    <p>
+      Free Russia NL is een grassroots community van Russisch-sprekende inwoners
+      en burgers van Nederland. Onze gemeenschap ontstond in januari 2021. 24
+      februari 2022 veranderde voor ieder van ons, binnen en buiten Rusland, het
+      leven drastisch. 'Overnight' steeg ons ledenbestand tot 1200 leden - voor
+      ons een teken van grote behoefte in de Russisch-sprekende gemeenschap in
+      Nederland om zich tegen de oorlog en tegen het regime uit te spreken,
+      steun te betuigen aan Oekraïne en elkaar. Op dit moment telt ons
+      telegramkanaal <a href="https://t.me/FreeRussiaNL"
+        >https://t.me/FreeRussiaNL</a
+      > rond de 2.500 leden.
+    </p>
+    <p>
+      Ook zien we grote belangstelling voor ons standpunt vanuit de Nederlandse
+      samenleving.
+    </p>
+    <p>
+      Gedurende de oorlogsmaanden voeren we actie, zamelen geld in voor
+      humanitaire hulp aan Oekraïne en aan de Oekraïense vluchtelingen in
+      Nederland, helpen journalisten en activisten uit Rusland die genoodzaakt
+      zijn het land te verlaten en spreken met Nederlandse media. In juni 2022
+      hebben we onze organisatie als stichting in Nederland geregistreerd:
+    </p>
+    <!-- Donate section content here -->
+    <p>
+      <b>Beneficiary name:</b> <code>Free Russia Nederland</code>
+    </p>
+    <p><b>IBAN:</b> <code>NL20ABNA0113016549</code></p>
+    <p>Wij zijn een ANBI Stichting (KvK nummer: 86836935)</p>
+    <p><a href="https://freerussia.nl/tikkie">Doneer via tikkie</a></p>
+
+    <form action="https://www.paypal.com/donate" method="post" target="_top">
+      <input type="hidden" name="hosted_button_id" value="CQ4S4K5TN8RY8" />
+      <input
+        type="image"
+        src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+        name="submit"
+        title="PayPal - The safer, easier way to pay online!"
+        alt="Donate with PayPal button"
+      />
+      <img
+        alt=""
+        src="https://www.paypal.com/en_NL/i/scr/pixel.gif"
+        width="1"
+        height="1"
+      />
+    </form>
+
+    <p>Bestuursleden:</p>
+    <ul>
+      <li>Svetlana Pylaeva (voorzitter)</li>
+      <li>Kristina Petrasova (secretaris)</li>
+      <li>Ira Heuvelman (penningmeester)</li>
+    </ul>
+
+    <p>
+      Communication, press and public events: <a
+        href="mailto:press@freerussia.nl">press@freerussia.nl</a
+      >
+    </p>
+
+    <p>De doelstellingen van FreeRussiaNL Stichting zijn:</p>
+    <p>
+      Het bevorderen van democratie, mensenrechten en de rechtsstaat, in het
+      algemeen, meer in het bijzonder:
+    </p>
+    <ul>
+      <li>
+        democratische waarden, -normen en -aanpak, met inbegrip van vrije
+        verkiezingen;
+      </li>
+      <li>
+        mensenrechten, waaronder vrijheid van meningsuiting, vrijheid van
+        vergadering en vereniging, vrijheid van gedachten en van geweten;
+      </li>
+      <li>tolerantie en non-discriminatie;</li>
+      <li>rechtsstaat en onafhankelijkheid van de rechterlijke macht.</li>
+    </ul>
+    <p>
+      Het bijeenbrengen en ondersteunen van de in Nederland en Europa gevestigde
+      Russischtalige gemeenschap die de bovengenoemde waarden deelt.
+    </p>
+    <h2>Upcoming events</h2>
+    <ul>
+      {#each upcomingEvents as { date, title, link, comment }}
+        <li>
+          {date}
+          <a href={link}>
+            {title}
+          </a>
+          {#if comment}
+            {comment}
+          {/if}
+        </li>
+      {/each}
+    </ul>
+    <h2>Petitions</h2>
+    <ul>
+      <li>
+        <a
+          href="/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"
+        >
+          Oproep tot een genuanceerd immigratiebeleid voor de Russische burgers
+          die onder de voortdurende mobilisatie in Rusland vallen.
+        </a>
+      </li>
+      <li>
+        <a
+          href="/docs/Call_to_introduce_a_nuanced_immigration_policy_for_the_Russian_citizens.pdf"
+        >
+          Call to introduce a nuanced immigration policy for the Russian
+          citizens falling under conscription policies
+        </a>
+      </li>
+      <li>
+        <a
+          href="/docs/Oproep_voor_tijdelijk_migratiebeleid_voor_Russische_ballingen_in.pdf"
+        >
+          Open letter to Ministers Hoekstra, Yeşilgöz-Zegerius and Bruins Slot.
+          Call for Temporary Migration Policy for Russian Exiles in Wartime
+        </a>
+      </li>
+      <li>
+        Petition to the MPs of the Netherlands
+        <ul style="margin-top: 0.5em">
+          <li>
+            <strong
+              ><a
+                href="https://www.petitie24.nl/petitie/3532/maak-europa-vrij-van-corruptiegeld-uit-rusland"
+                >Dutch – sign here!</a
+              ></strong
+            >
+          </li>
+          <li><a href="/docs/petition_en.pdf">English</a></li>
+          <li><a href="/docs/petition_ru.pdf">Russian</a></li>
+        </ul>
+      </li>
+    </ul>
+    <h2>Links</h2>
+    <ul>
+      {#each links as { title, link, text }}
+        <li>
+          {#if title}
+            {title}:
+          {/if}
+          <a href={link}>{text}</a>
+        </li>
+      {/each}
+    </ul>
+    <h2>Past events</h2>
+    <ul>
+      {#each pastEvents as { date, title, link, comment }}
+        <li>
+          {date}
+          <a href={link}>
+            {title}
+          </a>
+          {#if comment}
+            {comment}
+          {/if}
+        </li>
+      {/each}
+    </ul>
+    <h2>and media</h2>
+    <ul>
+      {#each press as { date, text, link, comment }}
+        <li>
+          {date}
+          <a href={link}>
+            {text}
+          </a>
+          {#if comment}
+            {comment}
+          {/if}
+        </li>
+      {/each}
+    </ul>
+    <hr />
+    <a
+      href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/anbi-status-controleren"
+    >
+      <img src="./images/logo-anbi.svg" width="53" alt="anbi logo" />
+    </a>
+  </div>
 </main>
