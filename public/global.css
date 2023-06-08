@@ -42,6 +42,7 @@ header {
   font-size: large;
   color: white;
   cursor: pointer;
+  padding: 0;
 }
 
 .genesis {
