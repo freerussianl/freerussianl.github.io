@@ -113,6 +113,19 @@ header {
   margin: 15px 30px;
 }
 
+.past {
+  color: #858E8E;
+}
+
+.date {
+  font-size: larger;
+}
+
+.more:hover {
+  text-decoration: underline;
+  cursor:pointer;
+}
+
 hr {
   height: 3px;
   background-color: white;
@@ -135,9 +148,8 @@ img {
 }
 
 ul {
-  margin-top: 0;
-  margin-bottom: 2em;
-  padding-left: 1.2em;
+  margin: 0;
+  padding-left: 0;
 }
 
 ul > ul {
@@ -145,7 +157,8 @@ ul > ul {
 }
 
 li {
-  margin-bottom: 0.4em;
+  margin: 0.4em 0;
+  list-style: none;
 }
 
 a {

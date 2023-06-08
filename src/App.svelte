@@ -1,7 +1,8 @@
 <script lang="ts">
   import events from "./resources/events.json";
-  import links from "./resources/links.json";
+  //import links from "./resources/links.json";
   import press from "./resources/press.json";
+  import { writable } from "svelte/store";
 
   const { upcomingEvents, pastEvents } = events.reduce(
     (acc, event) => {
@@ -20,6 +21,41 @@
     },
     { upcomingEvents: [], pastEvents: [] }
   );
+
+  let showAll = false;
+
+  // Create a writable store to track the limited press and events items
+  let limitedPress = writable([]);
+  let limitedPastEvents = writable([]);
+
+  // Function to toggle the showAll state
+  const toggleShowAll = () => {
+    showAll = !showAll;
+    updateLimitedPress();
+    updateLimitedPastEvents();
+  };
+
+  // Update the limitedPress store based on the showAll state
+  const updateLimitedPress = () => {
+    if (showAll) {
+      limitedPress.set(press);
+    } else {
+      limitedPress.set(press.slice(0, 4));
+    }
+  };
+
+  // Update the limitedPastEvents store based on the showAll state
+  const updateLimitedPastEvents = () => {
+    if (showAll) {
+      limitedPastEvents.set(pastEvents);
+    } else {
+      limitedPastEvents.set(pastEvents.slice(0, 4));
+    }
+  };
+
+  // Initial update of limitedPress and limitedPastEvents
+  updateLimitedPress();
+  updateLimitedPastEvents();
 
   const copyText = () => {
     const textToCopy = document.getElementById("textToCopy").innerText;
@@ -64,6 +100,7 @@
         verlaten en spreken met Nederlandse media. In juni 2022 hebben we onze
         organisatie als stichting in Nederland geregistreerd.
       </p>
+      <br />
     </div>
     <img src="/images/community.png" alt="Community" class="img_community" />
     <div class="about">
@@ -79,6 +116,7 @@
         verspreiden van waarheidsgetrouwe informatie over de Russische politiek
         en samenleving.
       </p>
+      <br />
     </div>
     <div class="about">
       <h4 class="title">De doelstellingen</h4>
@@ -100,11 +138,13 @@
         Het bijeenbrengen en ondersteunen van de in Nederland en Europa gevestigde
         Russischtalige gemeenschap die de bovengenoemde waarden deelt.
       </p>
+      <br />
     </div>
   </div>
   <div>
     <h1 class="maintitle">Bestuursleden</h1>
     <div class="about">
+      <br />
       <p>
         <span class="black">Svetlana Pylaeva — </span><span class="blue"
           >voorzitter</span
@@ -120,11 +160,13 @@
           >penningmeester</span
         >
       </p>
+      <br />
     </div>
   </div>
   <div>
     <h1 class="maintitle">Documenten</h1>
     <div class="documents">
+      <br />
       <p class="text">
         Oproep tot een genuanceerd immigratiebeleid voor de Russische burgers
         die onder de voortdurende mobilisatie in Rusland vallen.
@@ -204,8 +246,11 @@
         en energie in, en schrijf ons
       </p>
       <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold">&nbsp;&nbsp;&nbsp;<a href="mailto:info@freerussia.nl">info@freerussia.nl</a></span><br /><br
-      />
+      <span class="bold"
+        >&nbsp;&nbsp;&nbsp;<a href="mailto:info@freerussia.nl"
+          >info@freerussia.nl</a
+        ></span
+      ><br /><br />
     </div>
     <div class="about" bind:this={donateRef}>
       <h4 class="title">Financieel ondersteunen</h4>
@@ -251,13 +296,85 @@
   <div>
     <h1 class="maintitle">Pers en media</h1>
     <div class="documents">
-      <p>...</p>
+      <br />
+      <ul>
+        {#each $limitedPress as { date, text, link, comment }}
+          <li>
+            {#if comment}
+              {comment}
+            {/if}
+            <a href={link} class="black">
+              {text}
+            </a>
+            <br />
+            <br />
+            {date}
+          </li>
+          <hr />
+        {/each}
+        {#if press.length > 4}
+          {#if !showAll}
+            <p class="blue black more" on:click={toggleShowAll}>Toon meer →</p>
+          {:else}
+            <p class="blue black more" on:click={toggleShowAll}>
+              Toon minder ↑
+            </p>
+          {/if}
+        {/if}
+      </ul>
     </div>
   </div>
   <div>
     <h1 class="maintitle">Upcoming and past events</h1>
     <div class="about">
-      <p>...</p>
+      <br />
+      <ul>
+        {#each upcomingEvents as { date, title, link, comment }}
+          <li>
+            <img src="/images/bell.svg" alt="Bell" /><span class="blue date"
+              >&nbsp;&nbsp;&nbsp;{date}</span
+            >
+            <br />
+            <br />
+            <a href={link} class="black">
+              {title}
+            </a>
+            {#if comment}
+              {comment}
+            {/if}
+          </li>
+          <hr />
+        {/each}
+      </ul>
+      <ul class="past">
+        {#each $limitedPastEvents as { date, title, link, comment }}
+          <li>
+            <img src="/images/bellgrey.svg" alt="Bell" /><span class="date"
+              >&nbsp;&nbsp;&nbsp;{date}</span
+            >
+            <br />
+            <br />
+            <a href={link} class="past black">
+              {title}
+            </a>
+            {#if comment}
+              {comment}
+            {/if}
+          </li>
+          <hr />
+        {/each}
+        {#if pastEvents.length > 4}
+          {#if !showAll}
+            <p class="blue black more" on:click={toggleShowAll}>
+              Previous events →
+            </p>
+          {:else}
+            <p class="blue black more" on:click={toggleShowAll}>
+              Less events ↑
+            </p>
+          {/if}
+        {/if}
+      </ul>
     </div>
   </div>
   <div>
@@ -269,8 +386,11 @@
       </h4>
       <p class="text">Interesse? Stuur uw artikel naar:</p>
       <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold">&nbsp;&nbsp;&nbsp;<a href="mailto:editorial@freerussia.nl">editorial@freerussia.nl</a></span><br
-      /><br />
+      <span class="bold"
+        >&nbsp;&nbsp;&nbsp;<a href="mailto:editorial@freerussia.nl"
+          >editorial@freerussia.nl</a
+        ></span
+      ><br /><br />
     </div>
     <div>
       <h1 class="maintitle">Volg ons via</h1>
@@ -291,220 +411,22 @@
           <a href="https://www.youtube.com/channel/UCU9wy4JM-OagJfIhWI4U9MA"
             ><img src="/images/ut.png" alt="Youtube" />
           </a>
-          <a href="/links"
-          ><img src="/images/links.png" alt="Links" />
-        </a>
+          <a href="/links">
+            <span class="maintitle black">Meer</span>
+          </a>
         </div>
       </div>
     </div>
-    <div class="links">
-      <hr>
-    <a
-    href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/anbi-status-controleren"
-  >
-    <img src="./images/logo-anbi.svg" width="53" alt="anbi logo" />
-  </a>
-  </div>
-      <!-- The end of new version -->
-    <p>
-      <a
-        href="https://www.change.org/p/декларация-российских-демократических-сил"
-      >
-        Verklaring van de Russische Democratische Initiatieven, Berlijn, 30
-        april 2023
-      </a>
-    </p>
-    <p>
-      <a href="/docs/beleidsplan_2022-2024.pdf"> Beleidsplan 2022-2024 </a>
-    </p>
-    <p>
-      <a href="/statement">
-        Statement van FreeRussiaNL n.a.v. de Schengen visa-vraagstuk voor
-        burgers van Russische Federatie
-      </a>
-    </p>
-    <p>
-      Free Russia NL is een grassroots community van Russisch-sprekende inwoners
-      en burgers van Nederland. Onze gemeenschap ontstond in januari 2021. 24
-      februari 2022 veranderde voor ieder van ons, binnen en buiten Rusland, het
-      leven drastisch. 'Overnight' steeg ons ledenbestand tot 1200 leden - voor
-      ons een teken van grote behoefte in de Russisch-sprekende gemeenschap in
-      Nederland om zich tegen de oorlog en tegen het regime uit te spreken,
-      steun te betuigen aan Oekraïne en elkaar. Op dit moment telt ons
-      telegramkanaal <a href="https://t.me/FreeRussiaNL"
-        >https://t.me/FreeRussiaNL</a
-      > rond de 2.500 leden.
-    </p>
-    <p>
-      Ook zien we grote belangstelling voor ons standpunt vanuit de Nederlandse
-      samenleving.
-    </p>
-    <p>
-      Gedurende de oorlogsmaanden voeren we actie, zamelen geld in voor
-      humanitaire hulp aan Oekraïne en aan de Oekraïense vluchtelingen in
-      Nederland, helpen journalisten en activisten uit Rusland die genoodzaakt
-      zijn het land te verlaten en spreken met Nederlandse media. In juni 2022
-      hebben we onze organisatie als stichting in Nederland geregistreerd:
-    </p>
-    <!-- Donate section content here -->
-    <p>
-      <b>Beneficiary name:</b> <code>Free Russia Nederland</code>
-    </p>
-    <p><b>IBAN:</b> <code>NL20ABNA0113016549</code></p>
-    <p>Wij zijn een ANBI Stichting (KvK nummer: 86836935)</p>
-    <p><a href="https://freerussia.nl/tikkie">Doneer via tikkie</a></p>
-
-    <form action="https://www.paypal.com/donate" method="post" target="_top">
-      <input type="hidden" name="hosted_button_id" value="CQ4S4K5TN8RY8" />
-      <input
-        type="image"
-        src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
-        name="submit"
-        title="PayPal - The safer, easier way to pay online!"
-        alt="Donate with PayPal button"
-      />
-      <img
-        alt=""
-        src="https://www.paypal.com/en_NL/i/scr/pixel.gif"
-        width="1"
-        height="1"
-      />
-    </form>
-
-    <p>Bestuursleden:</p>
-    <ul>
-      <li>Svetlana Pylaeva (voorzitter)</li>
-      <li>Kristina Petrasova (secretaris)</li>
-      <li>Ira Heuvelman (penningmeester)</li>
-    </ul>
-
-    <p>
-      Communication, press and public events: <a
-        href="mailto:press@freerussia.nl">press@freerussia.nl</a
-      >
-    </p>
-
-    <p>De doelstellingen van FreeRussiaNL Stichting zijn:</p>
-    <p>
-      Het bevorderen van democratie, mensenrechten en de rechtsstaat, in het
-      algemeen, meer in het bijzonder:
-    </p>
-    <ul>
-      <li>
-        democratische waarden, -normen en -aanpak, met inbegrip van vrije
-        verkiezingen;
-      </li>
-      <li>
-        mensenrechten, waaronder vrijheid van meningsuiting, vrijheid van
-        vergadering en vereniging, vrijheid van gedachten en van geweten;
-      </li>
-      <li>tolerantie en non-discriminatie;</li>
-      <li>rechtsstaat en onafhankelijkheid van de rechterlijke macht.</li>
-    </ul>
-    <p>
-      Het bijeenbrengen en ondersteunen van de in Nederland en Europa gevestigde
-      Russischtalige gemeenschap die de bovengenoemde waarden deelt.
-    </p>
-    <h2>Upcoming events</h2>
-    <ul>
-      {#each upcomingEvents as { date, title, link, comment }}
-        <li>
-          {date}
-          <a href={link}>
-            {title}
-          </a>
-          {#if comment}
-            {comment}
-          {/if}
-        </li>
-      {/each}
-    </ul>
-    <h2>Petitions</h2>
-    <ul>
-      <li>
+    <div>
+      <hr />
+      <h1 class="maintitle">Partners</h1>
+      <div class="links">
         <a
-          href="/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"
+          href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/anbi-status-controleren"
         >
-          Oproep tot een genuanceerd immigratiebeleid voor de Russische burgers
-          die onder de voortdurende mobilisatie in Rusland vallen.
+          <img src="./images/logo-anbi.svg" width="53" alt="anbi logo" />
         </a>
-      </li>
-      <li>
-        <a
-          href="/docs/Call_to_introduce_a_nuanced_immigration_policy_for_the_Russian_citizens.pdf"
-        >
-          Call to introduce a nuanced immigration policy for the Russian
-          citizens falling under conscription policies
-        </a>
-      </li>
-      <li>
-        <a
-          href="/docs/Oproep_voor_tijdelijk_migratiebeleid_voor_Russische_ballingen_in.pdf"
-        >
-          Open letter to Ministers Hoekstra, Yeşilgöz-Zegerius and Bruins Slot.
-          Call for Temporary Migration Policy for Russian Exiles in Wartime
-        </a>
-      </li>
-      <li>
-        Petition to the MPs of the Netherlands
-        <ul style="margin-top: 0.5em">
-          <li>
-            <strong
-              ><a
-                href="https://www.petitie24.nl/petitie/3532/maak-europa-vrij-van-corruptiegeld-uit-rusland"
-                >Dutch – sign here!</a
-              ></strong
-            >
-          </li>
-          <li><a href="/docs/petition_en.pdf">English</a></li>
-          <li><a href="/docs/petition_ru.pdf">Russian</a></li>
-        </ul>
-      </li>
-    </ul>
-    <h2>Links</h2>
-    <ul>
-      {#each links as { title, link, text }}
-        <li>
-          {#if title}
-            {title}:
-          {/if}
-          <a href={link}>{text}</a>
-        </li>
-      {/each}
-    </ul>
-    <h2>Past events</h2>
-    <ul>
-      {#each pastEvents as { date, title, link, comment }}
-        <li>
-          {date}
-          <a href={link}>
-            {title}
-          </a>
-          {#if comment}
-            {comment}
-          {/if}
-        </li>
-      {/each}
-    </ul>
-    <h2>and media</h2>
-    <ul>
-      {#each press as { date, text, link, comment }}
-        <li>
-          {date}
-          <a href={link}>
-            {text}
-          </a>
-          {#if comment}
-            {comment}
-          {/if}
-        </li>
-      {/each}
-    </ul>
-    <hr />
-    <a
-      href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/anbi-status-controleren"
-    >
-      <img src="./images/logo-anbi.svg" width="53" alt="anbi logo" />
-    </a>
+      </div>
+    </div>
   </div>
 </main>
