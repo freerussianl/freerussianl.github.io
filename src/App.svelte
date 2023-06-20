@@ -22,40 +22,32 @@
     { upcomingEvents: [], pastEvents: [] }
   );
 
-  let showAll = false;
+  // Create a writable store for the showAllItems state
+  let showAllItems = writable({ press: false, pastEvents: false });
 
-  // Create a writable store to track the limited press and events items
+  // Create writable stores for press and past events
   let limitedPress = writable([]);
   let limitedPastEvents = writable([]);
 
-  // Function to toggle the showAll state
-  const toggleShowAll = () => {
-    showAll = !showAll;
-    updateLimitedPress();
-    updateLimitedPastEvents();
-  };
-
-  // Update the limitedPress store based on the showAll state
-  const updateLimitedPress = () => {
-    if (showAll) {
-      limitedPress.set(press);
+  // Function to update the limitedItems store based on the showAllItems state
+  const updateLimitedItems = (items, limitedItems, showAllItems) => {
+    if (showAllItems) {
+      limitedItems.set(items);
     } else {
-      limitedPress.set(press.slice(0, 4));
-    }
-  };
-
-  // Update the limitedPastEvents store based on the showAll state
-  const updateLimitedPastEvents = () => {
-    if (showAll) {
-      limitedPastEvents.set(pastEvents);
-    } else {
-      limitedPastEvents.set(pastEvents.slice(0, 4));
+      limitedItems.set(items.slice(0, 4));
     }
   };
 
   // Initial update of limitedPress and limitedPastEvents
-  updateLimitedPress();
-  updateLimitedPastEvents();
+  updateLimitedItems(press, limitedPress, showAllItems.press);
+  updateLimitedItems(pastEvents, limitedPastEvents, showAllItems.pastEvents);
+
+  // Function to toggle the showAll state for a specific section
+  const toggleShowAll = (key) => {
+    showAllItems[key] = !showAllItems[key];
+    updateLimitedItems(press, limitedPress, showAllItems.press);
+    updateLimitedItems(pastEvents, limitedPastEvents, showAllItems.pastEvents);
+  };
 
   const copyText = () => {
     const textToCopy = document.getElementById("textToCopy").innerText;
@@ -172,7 +164,6 @@
         die onder de voortdurende mobilisatie in Rusland vallen.
       </p>
       <div class="button_container">
-        <span class="blue black">Download PDF</span>
         <a
           href="/docs/open_brief_aan_de_Nederlandse_regering,_aan_de_Staatssecretaris_nl.pdf"
         >
@@ -186,7 +177,6 @@
         values.
       </p>
       <div class="button_container">
-        <span class="blue black">Download PDF</span>
         <a href="/docs/beleidsplan_2022-2024.pdf">
           <img src="/images/download.svg" alt="download" />
         </a>
@@ -197,7 +187,6 @@
         burgers van Russische Federatie
       </p>
       <div class="button_container">
-        <span class="blue black">Download PDF</span>
         <a href="/statement">
           <img src="/images/download.svg" alt="download" />
         </a>
@@ -208,7 +197,6 @@
         falling under conscription policies
       </p>
       <div class="button_container">
-        <span class="blue black">Download PDF</span>
         <a
           href="/docs/Call_to_introduce_a_nuanced_immigration_policy_for_the_Russian_citizens.pdf"
         >
@@ -313,10 +301,12 @@
           <hr />
         {/each}
         {#if press.length > 4}
-          {#if !showAll}
-            <p class="blue black more" on:click={toggleShowAll}>Toon meer →</p>
+          {#if !showAllItems.press}
+            <p class="blue black more" on:click={() => toggleShowAll("press")}>
+              Toon meer →
+            </p>
           {:else}
-            <p class="blue black more" on:click={toggleShowAll}>
+            <p class="blue black more" on:click={() => toggleShowAll("press")}>
               Toon minder ↑
             </p>
           {/if}
@@ -364,12 +354,18 @@
           <hr />
         {/each}
         {#if pastEvents.length > 4}
-          {#if !showAll}
-            <p class="blue black more" on:click={toggleShowAll}>
+          {#if !showAllItems.pastEvents}
+            <p
+              class="blue black more"
+              on:click={() => toggleShowAll("pastEvents")}
+            >
               Previous events →
             </p>
           {:else}
-            <p class="blue black more" on:click={toggleShowAll}>
+            <p
+              class="blue black more"
+              on:click={() => toggleShowAll("pastEvents")}
+            >
               Less events ↑
             </p>
           {/if}
