@@ -59,6 +59,14 @@
   const scrollToDonate = () => {
     donateRef.scrollIntoView({ behavior: "smooth" });
   };
+
+  let email = "";
+
+  function handleSubscribe() {
+    const encodedEmail = encodeURIComponent(email);
+    const url = `https://frnlnewsletter.hosted.phplist.com/lists/?p=subscribe&email=${encodedEmail}&emailconfirm=${encodedEmail}`;
+    window.location.href = url;
+  }
 </script>
 
 <main>
@@ -134,25 +142,62 @@
     </div>
   </div>
   <div>
-    <h1 class="maintitle">Bestuursleden</h1>
+    <h1 class="maintitle">Upcoming and past events</h1>
     <div class="about">
       <br />
-      <p>
-        <span class="black">Svetlana Pylaeva — </span><span class="blue"
-          >voorzitter</span
-        >
-      </p>
-      <p>
-        <span class="black">Kristina Petrasova — </span><span class="blue"
-          >secretaris</span
-        >
-      </p>
-      <p>
-        <span class="black">Ira Heuvelman — </span><span class="blue"
-          >penningmeester</span
-        >
-      </p>
-      <br />
+      <ul>
+        {#each upcomingEvents as { date, title, link, comment }}
+          <li>
+            <img src="/images/bell.svg" alt="Bell" /><span class="blue date"
+              >&nbsp;&nbsp;&nbsp;{date}</span
+            >
+            <br />
+            <br />
+            <a href={link} class="black">
+              {title}
+            </a>
+            {#if comment}
+              {comment}
+            {/if}
+          </li>
+          <hr />
+        {/each}
+      </ul>
+      <ul class="past">
+        {#each $limitedPastEvents as { date, title, link, comment }}
+          <li>
+            <img src="/images/bellgrey.svg" alt="Bell" /><span class="date"
+              >&nbsp;&nbsp;&nbsp;{date}</span
+            >
+            <br />
+            <br />
+            <a href={link} class="past black">
+              {title}
+            </a>
+            {#if comment}
+              {comment}
+            {/if}
+          </li>
+          <hr />
+        {/each}
+        {#if pastEvents.length > 4}
+          {#if !showAllItems.pastEvents}
+            <p
+              class="blue black more"
+              on:click={() => toggleShowAll("pastEvents")}
+            >
+              Previous events →
+            </p>
+          {:else}
+            <p
+              class="blue black more"
+              on:click={() => toggleShowAll("pastEvents")}
+            >
+              Less events ↑
+            </p>
+          {/if}
+        {/if}
+      </ul>
     </div>
   </div>
   <div>
@@ -254,7 +299,11 @@
       <span class="text">Free Russia Nederland</span>
       <br />
       <span class="black">IBAN:</span>
-      <span id="textToCopy" on:click={copyText}>NL20ABNA0113016549</span>
+      <span id="textToCopy">NL20ABNA0113016549</span>&nbsp;&nbsp;&nbsp;<img
+        src="/images/copy.svg"
+        alt="Copy"
+        on:click={copyText}
+      />
       <br />
       <p class="text">
         Wij zijn een ANBI Stichting<br />
@@ -279,6 +328,28 @@
       <a href="https://freerussia.nl/tikkie">
         <img src="/images/tikkie.png" alt="Tikkie" class="tikkie" />
       </a>
+    </div>
+  </div>
+  <div>
+    <h1 class="maintitle">Bestuursleden</h1>
+    <div class="about">
+      <br />
+      <p>
+        <span class="black">Svetlana Pylaeva — </span><span class="blue"
+          >voorzitter</span
+        >
+      </p>
+      <p>
+        <span class="black">Kristina Petrasova — </span><span class="blue"
+          >secretaris</span
+        >
+      </p>
+      <p>
+        <span class="black">Ira Heuvelman — </span><span class="blue"
+          >penningmeester</span
+        >
+      </p>
+      <br />
     </div>
   </div>
   <div>
@@ -313,64 +384,17 @@
         {/if}
       </ul>
     </div>
-  </div>
-  <div>
-    <h1 class="maintitle">Upcoming and past events</h1>
     <div class="about">
       <br />
-      <ul>
-        {#each upcomingEvents as { date, title, link, comment }}
-          <li>
-            <img src="/images/bell.svg" alt="Bell" /><span class="blue date"
-              >&nbsp;&nbsp;&nbsp;{date}</span
-            >
-            <br />
-            <br />
-            <a href={link} class="black">
-              {title}
-            </a>
-            {#if comment}
-              {comment}
-            {/if}
-          </li>
-          <hr />
-        {/each}
-      </ul>
-      <ul class="past">
-        {#each $limitedPastEvents as { date, title, link, comment }}
-          <li>
-            <img src="/images/bellgrey.svg" alt="Bell" /><span class="date"
-              >&nbsp;&nbsp;&nbsp;{date}</span
-            >
-            <br />
-            <br />
-            <a href={link} class="past black">
-              {title}
-            </a>
-            {#if comment}
-              {comment}
-            {/if}
-          </li>
-          <hr />
-        {/each}
-        {#if pastEvents.length > 4}
-          {#if !showAllItems.pastEvents}
-            <p
-              class="blue black more"
-              on:click={() => toggleShowAll("pastEvents")}
-            >
-              Previous events →
-            </p>
-          {:else}
-            <p
-              class="blue black more"
-              on:click={() => toggleShowAll("pastEvents")}
-            >
-              Less events ↑
-            </p>
-          {/if}
-        {/if}
-      </ul>
+      <p class="text">Bent u van de media? Neem contact met ons op:</p>
+      <img src="/images/envelope.svg" alt="envelope" />
+      <span class="bold"
+        >&nbsp;&nbsp;&nbsp;<a href="mailto:press@freerussia.nl"
+          >press@freerussia.nl</a
+        ></span
+      >
+      <br />
+      <br />
     </div>
   </div>
   <div>
@@ -387,6 +411,15 @@
           >editorial@freerussia.nl</a
         ></span
       ><br /><br />
+    </div>
+    <div>
+      <h1 class="maintitle">Blijf op de hoogte</h1>
+      <br />
+      <div class="button_container">
+      <input type="email" bind:value={email} placeholder="naam@freerussia.nl" class="email"/>
+      <button on:click={handleSubscribe} class="header_language">&#65291</button>
+      </div>
+      <p class="past">Schrijf je in voor onze nieuwsbrief</p>
     </div>
     <div>
       <h1 class="maintitle">Volg ons via</h1>

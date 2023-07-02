@@ -174,3 +174,16 @@ a:hover {
 a:visited {
   color: #005c92;
 }
+
+.email {
+  height: 25px;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: large;
+  border: 1px solid black;
+}
+
+.email:focus {
+  outline-color: #0097DC;
+}
