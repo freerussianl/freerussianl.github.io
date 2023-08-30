@@ -85,39 +85,23 @@
   </header>
   <div>
     <div class="genesis">
-      <h4 class="title">ontstaansgeschiedenis</h4>
+      <h4 class="title">Over ons</h4>
       <h4 class="bold">
         Van burgerinitiatief tot geregistreerde ANBI-stichting in Nederland
       </h4>
       <p class="text">
-        Free Russia NL is een grassroots community van Russisch-sprekende
-        inwoners en burgers van Nederland. Onze gemeenschap ontstond als een
-        burgerinitiatief in januari 2021. 24 februari 2022 veranderde voor ieder
-        van ons, binnen en buiten Rusland, het leven drastisch. Gedurende de
-        oorlogsmaanden voeren we actie, zamelen geld in voor humanitaire hulp
-        aan Oekraïne en aan de Oekraïense vluchtelingen in Nederland, helpen
-        journalisten en activisten uit Rusland die genoodzaakt zijn het land te
-        verlaten en spreken met Nederlandse media. In juni 2022 hebben we onze
-        organisatie als stichting in Nederland geregistreerd.
-      </p>
-      <br />
-    </div>
-    <img src="/images/community.png" alt="Community" class="img_community" />
-    <div class="about">
-      <h4 class="title">Over ons</h4>
-      <h4 class="bold">
-        Het verenigen, ondersteunen en behartigen van de belangen van
-        Russischtaligen die de democratische waarden in Nederland delen
-      </h4>
-      <p class="text">
-        Wij verlenen humanitaire hulp en organiseren evenementen om de aandacht
+        Free Russia NL is een grassroots community van Russisch-sprekende inwoners en burgers van Nederland. Onze gemeenschap ontstond als een burgerinitiatief in januari 2021. 24 februari 2022 veranderde voor ieder van ons, binnen en buiten Rusland, het leven drastisch. Gedurende de oorlogsmaanden voeren we actie, zamelen geld in voor humanitaire hulp aan Oekraïne en aan de Oekraïense vluchtelingen in Nederland, helpen journalisten en activisten uit Rusland die genoodzaakt zijn het land te verlaten en spreken met Nederlandse media. In juni 2022 hebben we onze organisatie als stichting in Nederland geregistreerd.
+        <br />
+        <br />
+        Wij zijn een vereniging die zich bezighoudt met het ondersteunen en behartigen van de belangen van Russischtaligen die democratische waarden in Nederland delen.         Wij verlenen humanitaire hulp en organiseren evenementen om de aandacht
         te vestigen op problemen van vluchtelingen uit Rusland, Oekraïne en
-        Wit-Rusland. Onze educatieve activiteiten zijn gericht op het
+        Belarus. Onze educatieve activiteiten zijn gericht op het
         verspreiden van waarheidsgetrouwe informatie over de Russische politiek
         en samenleving.
       </p>
       <br />
     </div>
+    <img src="/images/community.png" alt="Community" class="img_community" />
     <div class="about">
       <h4 class="title">De doelstellingen</h4>
       <h4 class="bold">
@@ -201,7 +185,7 @@
     </div>
   </div>
   <div>
-    <h1 class="maintitle">Documenten</h1>
+    <h1 class="maintitle">Ons werk</h1>
     <div class="documents">
       <br />
       <p class="text">
@@ -267,24 +251,6 @@
   </div>
   <div>
     <h1 class="maintitle">Samenwerking</h1>
-    <div class="about">
-      <h4 class="title">Vrijwilliger worden</h4>
-      <h4 class="bold">
-        Heb je interesse om als vrijwilliger mee te werken aan enkele van onze
-        activiteiten?
-      </h4>
-      <p class="text">
-        Geweldig! Wij verwelkomen enthousiaste mensen met verschillende
-        vaardigheden en kennis. Lees over onze activiteiten, schat je vrije tijd
-        en energie in, en schrijf ons
-      </p>
-      <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold"
-        >&nbsp;&nbsp;&nbsp;<a href="mailto:info@freerussia.nl"
-          >info@freerussia.nl</a
-        ></span
-      ><br /><br />
-    </div>
     <div class="about" bind:this={donateRef}>
       <h4 class="title">Financieel ondersteunen</h4>
       <p class="text">
@@ -292,7 +258,7 @@
         bedrijven en particulieren te aanvaarden. Alle ingezamelde fondsen
         zullen worden gebruikt voor:<br />
         - ontwikkeling van Free Russia NL<br />
-        - Hulp voor vluchtelingen uit Rusland, Oekraïne of Wit-Rusland<br />
+        - Hulp voor vluchtelingen uit Rusland, Oekraïne of Belarus<br />
         - Educatieve activiteiten in Nederland en online<br />
       </p>
       <span class="black">Beneficiary name:</span>
@@ -384,18 +350,6 @@
         {/if}
       </ul>
     </div>
-    <div class="about">
-      <br />
-      <p class="text">Bent u van de media? Neem contact met ons op:</p>
-      <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold"
-        >&nbsp;&nbsp;&nbsp;<a href="mailto:press@freerussia.nl"
-          >press@freerussia.nl</a
-        ></span
-      >
-      <br />
-      <br />
-    </div>
   </div>
   <div>
     <h1 class="maintitle">Blog</h1>
@@ -412,6 +366,34 @@
         ></span
       ><br /><br />
     </div>
+    <div>
+      <h1 class="maintitle">Contacten</h1>
+      <div class="about">
+        <br />
+        <p class="text">Wil je vrijwilliger worden?
+          Geweldig! Wij verwelkomen enthousiaste mensen met verschillende vaardigheden en kennis. Lees over onze activiteiten, schat je vrije tijd en energie in, en schrijf ons:</p>
+        <img src="/images/envelope.svg" alt="envelope" />
+        <span class="bold"
+          >&nbsp;&nbsp;&nbsp;<a href="mailto:info@freerussia.nl"
+            >info@freerussia.nl</a
+          ></span
+        ><br /><br />
+      </div>
+    </div>
+    <div>
+      <div class="about">
+        <br />
+      <p class="text">Bent u van de media? Neem contact met ons op:</p>
+      <img src="/images/envelope.svg" alt="envelope" />
+      <span class="bold"
+        >&nbsp;&nbsp;&nbsp;<a href="mailto:press@freerussia.nl"
+          >press@freerussia.nl</a
+        ></span
+      >
+      <br />
+      <br />
+    </div>
+  </div>
     <div>
       <h1 class="maintitle">Blijf op de hoogte</h1>
       <br />
