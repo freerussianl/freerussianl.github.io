@@ -114,6 +114,29 @@ header {
   margin: 15px 30px;
 }
 
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin: 15px 30px;
+}
+
+.link {
+  width: 65%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.anbi {
+  margin: 15px 30px;
+}
+
 .past {
   color: #858E8E;
 }

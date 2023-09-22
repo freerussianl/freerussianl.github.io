@@ -90,14 +90,23 @@
         Van burgerinitiatief tot geregistreerde ANBI-stichting in Nederland
       </h4>
       <p class="text">
-        Free Russia NL is een grassroots community van Russisch-sprekende inwoners en burgers van Nederland. Onze gemeenschap ontstond als een burgerinitiatief in januari 2021. 24 februari 2022 veranderde voor ieder van ons, binnen en buiten Rusland, het leven drastisch. Gedurende de oorlogsmaanden voeren we actie, zamelen geld in voor humanitaire hulp aan Oekraïne en aan de Oekraïense vluchtelingen in Nederland, helpen journalisten en activisten uit Rusland die genoodzaakt zijn het land te verlaten en spreken met Nederlandse media. In juni 2022 hebben we onze organisatie als stichting in Nederland geregistreerd.
+        Free Russia NL is een grassroots community van Russisch-sprekende
+        inwoners en burgers van Nederland. Onze gemeenschap ontstond als een
+        burgerinitiatief in januari 2021. 24 februari 2022 veranderde voor ieder
+        van ons, binnen en buiten Rusland, het leven drastisch. Gedurende de
+        oorlogsmaanden voeren we actie, zamelen geld in voor humanitaire hulp
+        aan Oekraïne en aan de Oekraïense vluchtelingen in Nederland, helpen
+        journalisten en activisten uit Rusland die genoodzaakt zijn het land te
+        verlaten en spreken met Nederlandse media. In juni 2022 hebben we onze
+        organisatie als stichting in Nederland geregistreerd.
         <br />
         <br />
-        Wij zijn een vereniging die zich bezighoudt met het ondersteunen en behartigen van de belangen van Russischtaligen die democratische waarden in Nederland delen.         Wij verlenen humanitaire hulp en organiseren evenementen om de aandacht
-        te vestigen op problemen van vluchtelingen uit Rusland, Oekraïne en
-        Belarus. Onze educatieve activiteiten zijn gericht op het
-        verspreiden van waarheidsgetrouwe informatie over de Russische politiek
-        en samenleving.
+        Wij zijn een vereniging die zich bezighoudt met het ondersteunen en behartigen
+        van de belangen van Russischtaligen die democratische waarden in Nederland
+        delen. Wij verlenen humanitaire hulp en organiseren evenementen om de aandacht
+        te vestigen op problemen van vluchtelingen uit Rusland, Oekraïne en Belarus.
+        Onze educatieve activiteiten zijn gericht op het verspreiden van waarheidsgetrouwe
+        informatie over de Russische politiek en samenleving.
       </p>
       <br />
     </div>
@@ -370,8 +379,11 @@
       <h1 class="maintitle">Contacten</h1>
       <div class="about">
         <br />
-        <p class="text">Wil je vrijwilliger worden?
-          Geweldig! Wij verwelkomen enthousiaste mensen met verschillende vaardigheden en kennis. Lees over onze activiteiten, schat je vrije tijd en energie in, en schrijf ons:</p>
+        <p class="text">
+          Wil je vrijwilliger worden? Geweldig! Wij verwelkomen enthousiaste
+          mensen met verschillende vaardigheden en kennis. Lees over onze
+          activiteiten, schat je vrije tijd en energie in, en schrijf ons:
+        </p>
         <img src="/images/envelope.svg" alt="envelope" />
         <span class="bold"
           >&nbsp;&nbsp;&nbsp;<a href="mailto:info@freerussia.nl"
@@ -383,23 +395,30 @@
     <div>
       <div class="about">
         <br />
-      <p class="text">Bent u van de media? Neem contact met ons op:</p>
-      <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold"
-        >&nbsp;&nbsp;&nbsp;<a href="mailto:press@freerussia.nl"
-          >press@freerussia.nl</a
-        ></span
-      >
-      <br />
-      <br />
+        <p class="text">Bent u van de media? Neem contact met ons op:</p>
+        <img src="/images/envelope.svg" alt="envelope" />
+        <span class="bold"
+          >&nbsp;&nbsp;&nbsp;<a href="mailto:press@freerussia.nl"
+            >press@freerussia.nl</a
+          ></span
+        >
+        <br />
+        <br />
+      </div>
     </div>
-  </div>
     <div>
       <h1 class="maintitle">Blijf op de hoogte</h1>
       <br />
       <div class="button_container">
-      <input type="email" bind:value={email} placeholder="naam@freerussia.nl" class="email"/>
-      <button on:click={handleSubscribe} class="header_language">&#65291</button>
+        <input
+          type="email"
+          bind:value={email}
+          placeholder="naam@freerussia.nl"
+          class="email"
+        />
+        <button on:click={handleSubscribe} class="header_language"
+          >&#65291</button
+        >
       </div>
       <p class="past">Schrijf je in voor onze nieuwsbrief</p>
     </div>
@@ -431,7 +450,44 @@
     <div>
       <hr />
       <h1 class="maintitle">Partners</h1>
-      <div class="links">
+      <div class="links-container">
+        <div class="link">
+          <a href="https://alegotour.com/en/">
+            <img src="./images/logos/logo1.png" width="58" alt="alegotour logo" />
+          </a>
+        </div>
+        <div class="link">
+          <a href="https://www.vrijpaleis.nl/">
+            <img src="./images/logos/logo2.png" alt="vrijpaleis logo" />
+          </a>
+        </div>
+        <div class="link">
+          <a href="https://www.medialoft.eu/">
+            <img src="./images/logos/logo3.png" alt="medialoft logo" />
+          </a>
+        </div>
+        <div class="link">
+          <a href="https://lgbtworldbeside.org/">
+            <img src="./images/logos/logo4.png" alt="lgbtworldbeside logo" />
+          </a>
+        </div>
+        <div class="link">
+          <img src="./images/logos/logo5.png" alt="ruslgbtiq logo" />
+        </div>
+        <div class="link">
+          <a href="https://www.facebook.com/stichtingopenbelarus/">
+            <img src="./images/logos/logo6.png" alt="openbelarus logo" />
+          </a>
+        </div>
+        <div class="link wide">
+          <a href="https://wfu.world/en/">
+            <img src="./images/logos/logo7.png" alt="wfu logo" />
+          </a>
+        </div>
+      </div>
+      <hr />
+      <hr />
+      <div class="anbi">
         <a
           href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/anbi-status-controleren"
         >
