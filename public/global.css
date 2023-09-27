@@ -112,7 +112,7 @@ header {
 }
 
 .links {
-  margin: 15px 30px;
+  margin: 15px 8px;
 }
 
 .links-container {
@@ -228,9 +228,10 @@ a:visited {
 }
 
 footer {
-  bottom: 0;
-  padding: 5%;
+  margin: 0;
+  padding: 0 1em;
   background-color: #F5F5F5;
+  outline: 1em solid #F5F5F5;
 }
 
 .footer-menu li {
