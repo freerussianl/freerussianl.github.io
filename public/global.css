@@ -16,6 +16,10 @@ header {
   display: flex;
 }
 
+.logo {
+max-width: 206px;
+}
+
 .button_container {
   margin-left: auto; 
   display: flex;

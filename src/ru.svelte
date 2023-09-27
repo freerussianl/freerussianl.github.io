@@ -1,6 +1,5 @@
 <script lang="ts">
   import events from "./resources/events.json";
-  //import links from "./resources/links.json";
   import press from "./resources/press.json";
   import { writable } from "svelte/store";
 
@@ -53,12 +52,6 @@
     const textToCopy = document.getElementById("textToCopy").innerText;
     navigator.clipboard.writeText(textToCopy);
   };
-
-  // let donateRef;
-
-  // const scrollToDonate = () => {
-  //   donateRef.scrollIntoView({ behavior: "smooth" });
-  // };
 
   let scrollToSections = [];
 
@@ -120,7 +113,7 @@
       </p>
       <br />
     </div>
-    <img src="/images/community.png" alt="Community" class="img_community" />
+    <img src="/images/community_ru.png" alt="Community" class="img_community" />
     <div class="about">
       <h4 class="title">Цели</h4>
       <h4 class="bold">
@@ -145,7 +138,7 @@
     </div>
   </div>
   <div bind:this={scrollToSections[1]}>
-    <h1 class="maintitle">Предстоящие и прошедшие мероприятия</h1>
+    <h1 class="maintitle">Мероприятия</h1>
     <div class="about">
       <br />
       <ul>
@@ -304,7 +297,7 @@
         <input type="hidden" name="hosted_button_id" value="CQ4S4K5TN8RY8" />
         <input
           type="image"
-          src="/images/paypal.png"
+          src="/images/paypal_ru.svg"
           name="submit"
           title="PayPal - The safer, easier way to pay online!"
           alt="Donate with PayPal button"
@@ -312,7 +305,7 @@
         />
       </form>
       <a href="https://freerussia.nl/tikkie">
-        <img src="/images/tikkie.png" alt="Tikkie" class="tikkie" />
+        <img src="/images/tikkie_ru.svg" alt="Tikkie" class="tikkie" />
       </a>
     </div>
   </div>
@@ -410,7 +403,7 @@
   </div>
   <div bind:this={scrollToSections[7]}>
     <a href="https://ru.freerussia.nl/blog">
-      <img src="/images/blog.png" alt="Blog" class="img_community" />
+      <img src="/images/blog_ru.png" alt="Blog" class="img_community" />
     </a>
   </div>
   <div>
@@ -493,13 +486,14 @@
         </a>
       </div>
     </div>
+    <br />
   </div>
 </main>
 <footer>
   <nav>
     <ul class="footer-menu">
       <li on:click={() => handleClick(0)}>О нас →</li>
-      <li on:click={() => handleClick(1)}>Предстоящие и прошедшие мероприятия →</li>
+      <li on:click={() => handleClick(1)}>Мероприятия →</li>
       <li on:click={() => handleClick(2)}>Наша работа →</li>
       <li on:click={() => handleClick(3)}>Сотрудничество →</li>
       <li on:click={() => handleClick(4)}>Участницы правления →</li>
