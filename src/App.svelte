@@ -56,12 +56,6 @@
     navigator.clipboard.writeText(textToCopy);
   };
 
-  // let donateRef;
-
-  // const scrollToDonate = () => {
-  //   donateRef.scrollIntoView({ behavior: "smooth" });
-  // };
-
   let scrollToSections = [];
 
   // Function to scroll to a section when a menu item is clicked
@@ -322,7 +316,7 @@
             />
             <input
               type="image"
-              src="/images/paypal.png"
+              src="/images/paypal.svg"
               name="submit"
               title="PayPal - The safer, easier way to pay online!"
               alt="Donate with PayPal button"
@@ -330,7 +324,7 @@
             />
           </form>
           <a href="https://freerussia.nl/tikkie">
-            <img src="/images/tikkie.png" alt="Tikkie" class="tikkie" />
+            <img src="/images/tikkie.svg" alt="Tikkie" class="tikkie" />
           </a>
         </div>
       </div>
