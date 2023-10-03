@@ -54,11 +54,21 @@
     navigator.clipboard.writeText(textToCopy);
   };
 
-  let donateRef;
+  // let donateRef;
 
-  const scrollToDonate = () => {
-    donateRef.scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollToDonate = () => {
+  //   donateRef.scrollIntoView({ behavior: "smooth" });
+  // };
+
+  let scrollToSections = [];
+
+    // Function to scroll to a section when a menu item is clicked
+    function handleClick(index) {
+    const scrollToSection = scrollToSections[index];
+    if (scrollToSection) {
+      scrollToSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
   let email = "";
 
@@ -73,7 +83,7 @@
   <header>
     <img src="/images/logo_full.svg" alt="Free Russia NL logo" class="logo" />
     <div class="button_container">
-      <button class="header_donate" on:click={scrollToDonate}
+      <button class="header_donate" on:click={() => handleClick(3)}
         ><img
           src="/images/header_donate.svg"
           alt="Donate"
@@ -84,8 +94,8 @@
     </div>
   </header>
   <div>
-    <div class="genesis">
-      <h4 class="title">ontstaansgeschiedenis</h4>
+    <div class="genesis" bind:this={scrollToSections[0]}>
+      <h4 class="title">Over ons</h4>
       <h4 class="bold">
         Van burgerinitiatief tot geregistreerde ANBI-stichting in Nederland
       </h4>
@@ -99,25 +109,18 @@
         journalisten en activisten uit Rusland die genoodzaakt zijn het land te
         verlaten en spreken met Nederlandse media. In juni 2022 hebben we onze
         organisatie als stichting in Nederland geregistreerd.
+        <br />
+        <br />
+        Wij zijn een vereniging die zich bezighoudt met het ondersteunen en behartigen
+        van de belangen van Russischtaligen die democratische waarden in Nederland
+        delen. Wij verlenen humanitaire hulp en organiseren evenementen om de aandacht
+        te vestigen op problemen van vluchtelingen uit Rusland, Oekraïne en Belarus.
+        Onze educatieve activiteiten zijn gericht op het verspreiden van waarheidsgetrouwe
+        informatie over de Russische politiek en samenleving.
       </p>
       <br />
     </div>
     <img src="/images/community.png" alt="Community" class="img_community" />
-    <div class="about">
-      <h4 class="title">Over ons</h4>
-      <h4 class="bold">
-        Het verenigen, ondersteunen en behartigen van de belangen van
-        Russischtaligen die de democratische waarden in Nederland delen
-      </h4>
-      <p class="text">
-        Wij verlenen humanitaire hulp en organiseren evenementen om de aandacht
-        te vestigen op problemen van vluchtelingen uit Rusland, Oekraïne en
-        Wit-Rusland. Onze educatieve activiteiten zijn gericht op het
-        verspreiden van waarheidsgetrouwe informatie over de Russische politiek
-        en samenleving.
-      </p>
-      <br />
-    </div>
     <div class="about">
       <h4 class="title">De doelstellingen</h4>
       <h4 class="bold">
@@ -141,7 +144,7 @@
       <br />
     </div>
   </div>
-  <div>
+  <div bind:this={scrollToSections[1]}>
     <h1 class="maintitle">Upcoming and past events</h1>
     <div class="about">
       <br />
@@ -200,8 +203,8 @@
       </ul>
     </div>
   </div>
-  <div>
-    <h1 class="maintitle">Documenten</h1>
+  <div bind:this={scrollToSections[2]}>
+    <h1 class="maintitle">Ons werk</h1>
     <div class="documents">
       <br />
       <p class="text">
@@ -265,34 +268,16 @@
       </a>
     </div>
   </div>
-  <div>
+  <div bind:this={scrollToSections[3]}>
     <h1 class="maintitle">Samenwerking</h1>
     <div class="about">
-      <h4 class="title">Vrijwilliger worden</h4>
-      <h4 class="bold">
-        Heb je interesse om als vrijwilliger mee te werken aan enkele van onze
-        activiteiten?
-      </h4>
-      <p class="text">
-        Geweldig! Wij verwelkomen enthousiaste mensen met verschillende
-        vaardigheden en kennis. Lees over onze activiteiten, schat je vrije tijd
-        en energie in, en schrijf ons
-      </p>
-      <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold"
-        >&nbsp;&nbsp;&nbsp;<a href="mailto:info@freerussia.nl"
-          >info@freerussia.nl</a
-        ></span
-      ><br /><br />
-    </div>
-    <div class="about" bind:this={donateRef}>
       <h4 class="title">Financieel ondersteunen</h4>
       <p class="text">
         Wij zijn een rechtspersoon in Nederland en hebben het recht donaties van
         bedrijven en particulieren te aanvaarden. Alle ingezamelde fondsen
         zullen worden gebruikt voor:<br />
         - ontwikkeling van Free Russia NL<br />
-        - Hulp voor vluchtelingen uit Rusland, Oekraïne of Wit-Rusland<br />
+        - Hulp voor vluchtelingen uit Rusland, Oekraïne of Belarus<br />
         - Educatieve activiteiten in Nederland en online<br />
       </p>
       <span class="black">Beneficiary name:</span>
@@ -330,7 +315,7 @@
       </a>
     </div>
   </div>
-  <div>
+  <div bind:this={scrollToSections[4]}>
     <h1 class="maintitle">Bestuursleden</h1>
     <div class="about">
       <br />
@@ -352,7 +337,7 @@
       <br />
     </div>
   </div>
-  <div>
+  <div bind:this={scrollToSections[5]}>
     <h1 class="maintitle">Pers en media</h1>
     <div class="documents">
       <br />
@@ -384,78 +369,155 @@
         {/if}
       </ul>
     </div>
-    <div class="about">
-      <br />
-      <p class="text">Bent u van de media? Neem contact met ons op:</p>
-      <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold"
-        >&nbsp;&nbsp;&nbsp;<a href="mailto:press@freerussia.nl"
-          >press@freerussia.nl</a
-        ></span
-      >
-      <br />
-      <br />
+  </div>
+    <div bind:this={scrollToSections[6]}>
+      <h1 class="maintitle">Contacten</h1>
+      <div class="about">
+        <p class="text">Bent u van de media? Neem contact met ons op:</p>
+        <img src="/images/envelope.svg" alt="envelope" />
+        <span class="bold"
+          >&nbsp;&nbsp;&nbsp;<a href="mailto:press@freerussia.nl"
+            >press@freerussia.nl</a
+          ></span
+        >
+        <br />
+        <hr />
+        <p class="text">
+          Wil je vrijwilliger worden? Geweldig! Wij verwelkomen enthousiaste
+          mensen met verschillende vaardigheden en kennis. Lees over onze
+          activiteiten, schat je vrije tijd en energie in, en schrijf ons:
+        </p>
+        <img src="/images/envelope.svg" alt="envelope" />
+        <span class="bold"
+          >&nbsp;&nbsp;&nbsp;<a href="mailto:info@freerussia.nl"
+            >info@freerussia.nl</a
+          ></span>
+        <br />
+        <hr />
+        <p class="text">Deel je verhaal! Op de blog publiceren we artikelen van onze communityleden en abonnees. Interesse? Stuur uw artikel naar:</p>
+        <img src="/images/envelope.svg" alt="envelope" />
+        <span class="bold"
+          >&nbsp;&nbsp;&nbsp;<a href="mailto:editorial@freerussia.nl"
+            >editorial@freerussia.nl</a
+          ></span
+        >
+        <br />
+        <br />
+      </div>
+    </div>
+    <div bind:this={scrollToSections[7]}>
+      <a href="https://ru.freerussia.nl/blog">
+        <img src="/images/blog.png" alt="Blog" class="img_community" />
+        </a>
+  </div>
+  <div>
+    <h1 class="maintitle">Volg ons via</h1>
+    <div class="links">
+      <div class="button_container">
+        <a href="https://t.me/FreeRussiaNL"
+          ><img src="/images/tg.png" alt="Telegram" />
+        </a>
+        <a href="https://facebook.com/FreeRussiaNL"
+          ><img src="/images/fb.png" alt="Facebook" />
+        </a>
+        <a href="https://instagram.com/freerussia.nl"
+          ><img src="/images/ig.png" alt="Instagram" />
+        </a>
+        <a href="https://twitter.com/russia_nl"
+          ><img src="/images/tw.png" alt="Twitter" />
+        </a>
+        <a href="https://www.youtube.com/channel/UCU9wy4JM-OagJfIhWI4U9MA"
+          ><img src="/images/ut.png" alt="Youtube" />
+        </a>
+        <a href="/links">
+          <span class="maintitle black">Meer</span>
+        </a>
+        <br />
+      </div>
     </div>
   </div>
   <div>
-    <h1 class="maintitle">Blog</h1>
-    <div class="documents">
-      <h4 class="title">Deel je verhaal</h4>
-      <h4 class="bold">
-        Hier publiceren we artikelen van onze communityleden en abonnees.
-      </h4>
-      <p class="text">Interesse? Stuur uw artikel naar:</p>
-      <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold"
-        >&nbsp;&nbsp;&nbsp;<a href="mailto:editorial@freerussia.nl"
-          >editorial@freerussia.nl</a
-        ></span
-      ><br /><br />
+    <br />
+    <h1 class="maintitle">Blijf op de hoogte</h1>
+    <div class="button_container">
+      <input
+        type="email"
+        bind:value={email}
+        placeholder="naam@freerussia.nl"
+        class="email"
+      />
+      <button on:click={handleSubscribe} class="header_language">&#65291</button
+      >
     </div>
-    <div>
-      <h1 class="maintitle">Blijf op de hoogte</h1>
-      <br />
-      <div class="button_container">
-      <input type="email" bind:value={email} placeholder="naam@freerussia.nl" class="email"/>
-      <button on:click={handleSubscribe} class="header_language">&#65291</button>
+    <p class="past">Schrijf je in voor onze nieuwsbrief</p>
+  </div>
+  <div>
+    <hr />
+    <h1 class="maintitle">Partners</h1>
+    <div class="links-container">
+      <div class="link">
+        <a href="https://alegotour.com/en/">
+          <img src="./images/logos/logo1.png" width="58" alt="alegotour logo" />
+        </a>
       </div>
-      <p class="past">Schrijf je in voor onze nieuwsbrief</p>
-    </div>
-    <div>
-      <h1 class="maintitle">Volg ons via</h1>
-      <div class="links">
-        <div class="button_container">
-          <a href="https://t.me/FreeRussiaNL"
-            ><img src="/images/tg.png" alt="Telegram" />
-          </a>
-          <a href="https://facebook.com/FreeRussiaNL"
-            ><img src="/images/fb.png" alt="Facebook" />
-          </a>
-          <a href="https://instagram.com/freerussia.nl"
-            ><img src="/images/ig.png" alt="Instagram" />
-          </a>
-          <a href="https://twitter.com/russia_nl"
-            ><img src="/images/tw.png" alt="Twitter" />
-          </a>
-          <a href="https://www.youtube.com/channel/UCU9wy4JM-OagJfIhWI4U9MA"
-            ><img src="/images/ut.png" alt="Youtube" />
-          </a>
-          <a href="/links">
-            <span class="maintitle black">Meer</span>
-          </a>
-        </div>
+      <div class="link">
+        <a href="https://www.vrijpaleis.nl/">
+          <img src="./images/logos/logo2.png" alt="vrijpaleis logo" />
+        </a>
       </div>
-    </div>
-    <div>
-      <hr />
-      <h1 class="maintitle">Partners</h1>
-      <div class="links">
-        <a
-          href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/anbi-status-controleren"
-        >
-          <img src="./images/logo-anbi.svg" width="53" alt="anbi logo" />
+      <div class="link">
+        <a href="https://www.medialoft.eu/">
+          <img src="./images/logos/logo3.png" alt="medialoft logo" />
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://www.facebook.com/stichtingopenbelarus/">
+          <img src="./images/logos/logo6.png" alt="openbelarus logo" />
+        </a>
+      </div>
+      <div class="link">
+        <img src="./images/logos/logo5.png" alt="ruslgbtiq logo" />
+      </div>
+      <div class="link">
+        <a href="https://lgbtworldbeside.org/">
+          <img src="./images/logos/logo4.png" alt="lgbtworldbeside logo" />
+        </a>
+      </div>
+      <div class="link wide">
+        <a href="https://wfu.world/en/">
+          <img src="./images/logos/logo7.png" alt="wfu logo" />
         </a>
       </div>
     </div>
   </div>
 </main>
+<footer>
+<nav>
+  <ul class="footer-menu">
+    <li on:click={() => handleClick(0)}>Over ons →
+    </li>
+    <li on:click={() => handleClick(1)}>Upcoming and past events →
+    </li>
+    <li on:click={() => handleClick(2)}>Ons werk →
+    </li>
+    <li on:click={() => handleClick(3)}>Samenwerking →
+    </li>
+    <li on:click={() => handleClick(4)}>Bestuursleden →
+    </li>
+    <li on:click={() => handleClick(5)}>Pers en media →
+    </li>
+    <li on:click={() => handleClick(6)}>Contacten →
+    </li>
+    <li on:click={() => handleClick(7)}>Blog →
+    </li>
+  </ul>
+</nav>
+  <br />
+  <div class="anbi">
+    <a
+      href="https://www.belastingdienst.nl/wps/wcm/connect/nl/aftrek-en-kortingen/content/anbi-status-controleren"
+    >
+      <img src="./images/logo-anbi.svg" width="53" alt="anbi logo" />
+    </a>
+  </div>
+</footer>
