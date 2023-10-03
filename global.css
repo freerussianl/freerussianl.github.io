@@ -2,7 +2,7 @@
 
 body {
   max-width: 480px;
-  padding: 1em;
+  padding: 1em 1em 0 1em;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   margin: auto;
@@ -29,6 +29,7 @@ header {
   border-radius: 10px;
   border: 0;
   background-color: black;
+  color: white;
   cursor: pointer;
 }
 
@@ -91,7 +92,7 @@ header {
   text-transform: uppercase;
   color: black;
   font-weight: 600;
-  margin: 15px 0 0 10px;
+  margin: 15px 10px;
 }
 
 .black {
@@ -114,12 +115,45 @@ header {
   margin: 15px 30px;
 }
 
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 8px;
+}
+
+.link {
+  width: 65%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
 .past {
-  color: #858E8E;
+  color: #858585;
+  margin-left: 10px;
 }
 
 .date {
   font-size: larger;
+}
+
+.blog {
+  height: 45px;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  border-width: 1px;
+  border-color: black;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  color: #858585;
 }
 
 .more:hover {
@@ -180,10 +214,31 @@ a:visited {
   width: 90%;
   border-radius: 10px;
   padding: 10px;
-  font-size: large;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
   border: 1px solid black;
 }
 
 .email:focus {
   outline-color: #0097DC;
+}
+
+.anbi {
+  margin: 1%;
+}
+
+footer {
+  bottom: 0;
+  padding: 5%;
+  background-color: #F5F5F5;
+}
+
+.footer-menu li {
+  color: #858585;
+  cursor:pointer;
+  padding: 1%;
+}
+
+.footer-menu li:hover {
+  text-decoration: underline;
 }
