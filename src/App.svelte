@@ -333,7 +333,7 @@
         <div class="about">
           <br />
           <p>
-            <span class="black">Svetlana Pylaeva — </span><span class="blue"
+            <span class="black">Alexander Kazakov — </span><span class="blue"
               >voorzitter</span
             >
           </p>
