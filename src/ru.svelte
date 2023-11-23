@@ -311,7 +311,7 @@
     </div>
   </div>
   <div bind:this={scrollToSections[4]}>
-    <h1 class="maintitle">Участницы правления</h1>
+    <h1 class="maintitle">Участники правления</h1>
     <div class="about">
       <br />
       <p>
