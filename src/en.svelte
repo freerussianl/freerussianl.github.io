@@ -2,6 +2,7 @@
   import events from "./resources/events.json";
   import press from "./resources/press.json";
   import { writable } from "svelte/store";
+  import { Link } from "svelte-routing";
 
   const { upcomingEvents, pastEvents } = events.reduce(
     (acc, event) => {
@@ -83,8 +84,8 @@
           class="img_donate"
         /></button
       >
-      <a target="_self" href="/ru"
-        ><button class="header_language">RU</button></a
+      <Link to="/ru">
+        <button class="header_language">RU</button></Link
       >
     </div>
   </header>
