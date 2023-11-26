@@ -118,8 +118,7 @@
     <div class="about">
       <h4 class="title">The objectives</h4>
       <h4 class="bold">
-        Promoting democracy, human rights and the rule of law, in general, more
-        specifically:
+        Supporting democracy, human rights, and the rule of law in Russia, specifically:
       </h4>
       <p class="text">
         <li>
