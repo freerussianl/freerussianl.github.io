@@ -5,6 +5,7 @@
   import { writable } from "svelte/store";
   import { Router, Route, Link } from "svelte-routing";
   import Ru from "./ru.svelte";
+  import En from "./en.svelte";
 
   const { upcomingEvents, pastEvents } = events.reduce(
     (acc, event) => {
@@ -92,8 +93,8 @@
               class="img_donate"
             /></button
           >
-          <Link to="/ru">
-            <button class="header_language">RU</button></Link
+          <Link to="/en">
+            <button class="header_language">EN</button></Link
           >
         </div>
       </header>
@@ -543,5 +544,6 @@
       </div>
     </footer>
   </Route>
+  <Route path="/en" component={En} />
   <Route path="/ru" component={Ru} />
 </Router>
