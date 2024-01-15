@@ -318,12 +318,12 @@
         >
       </p>
       <p>
-        <span class="black">Kristina Petrasova — </span><span class="blue"
+        <span class="black">Cyril Schmidt — </span><span class="blue"
           >secretary</span
         >
       </p>
       <p>
-        <span class="black">Ira Heuvelman — </span><span class="blue"
+        <span class="black">Kristina Petrasova — </span><span class="blue"
           >treasurer</span
         >
       </p>

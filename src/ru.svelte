@@ -320,12 +320,12 @@
         >
       </p>
       <p>
-        <span class="black">Кристина Петрасова — </span><span class="blue"
+        <span class="black">Кирилл Шмидт — </span><span class="blue"
           >секретарь</span
         >
       </p>
       <p>
-        <span class="black">Ира Хьювилман — </span><span class="blue"
+        <span class="black">Кристина Петрасова — </span><span class="blue"
           >казначей</span
         >
       </p>
