@@ -27,7 +27,7 @@ CookieConsent.run({
             en: {
                 consentModal: {
                     title: "This website uses cookies",
-                    description: "We use cookies to to analyse our traffic. We also share information about your use of our site with our analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.",
+                    description: "We use cookies to analyse our traffic. We also share information about your use of our site with our analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.",
                     acceptAllBtn: "Accept all",
                     acceptNecessaryBtn: "Reject all",
                     // showPreferencesBtn: "Manage preferences",
