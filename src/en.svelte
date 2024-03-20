@@ -243,21 +243,6 @@
           <img src="/images/download.svg" alt="download" />
         </a>
       </div>
-      <hr />
-      <p class="text">Petition to the MPs of the Netherlands</p>
-      <img src="/images/nl.svg" alt="nl" />
-      <a
-        href="https://www.petitie24.nl/petitie/3532/maak-europa-vrij-van-corruptiegeld-uit-rusland"
-        ><span class="blue black">Dutch</span>
-      </a><span class="black">— sign here!</span><br /><br />
-      <img src="/images/uk.svg" alt="uk" />
-      <a href="/docs/petition_en.pdf"
-        ><span class="blue black">English</span><br /><br />
-      </a>
-      <img src="/images/ru.svg" alt="ru" />
-      <a href="/docs/petition_ru.pdf"
-        ><span class="blue black">Russian</span><br /><br />
-      </a>
     </div>
   </div>
   <div bind:this={scrollToSections[3]}>
