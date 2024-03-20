@@ -126,11 +126,7 @@
           </p>
           <br />
         </div>
-        <img
-          src="/images/community.png"
-          alt="Community"
-          class="img_community"
-        />
+        <img src="/images/community_new.jpeg" style="border-radius: 20px" alt="Community" class="img_community" />
         <div class="about">
           <h4 class="title">De doelstellingen</h4>
           <h4 class="bold">
