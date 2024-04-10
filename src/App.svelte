@@ -214,6 +214,15 @@
         <div class="documents">
           <br />
           <p class="text">
+            Appeal regarding suicide of Russian citizens in 2023
+          </p>
+          <div class="button_container">
+            <a href="/statement/2024-04.html">
+              <img src="/images/download.svg" alt="download" />
+            </a>
+          </div>
+          <hr />
+          <p class="text">
             Oproep tot een genuanceerd immigratiebeleid voor de Russische
             burgers die onder de voortdurende mobilisatie in Rusland vallen.
           </p>
