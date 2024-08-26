@@ -59,6 +59,10 @@ max-width: 206px;
   text-align: left;
 }
 
+.text
+{    text-align: justify;
+}
+
 .about {
   max-width: 480px;
   border-radius: 25px;

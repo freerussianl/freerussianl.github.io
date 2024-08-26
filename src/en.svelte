@@ -130,6 +130,7 @@
         </li>
         <li>- tolerance and non-discrimination;</li>
         <li>- rule of law and independence of the judiciary.</li>
+        <br>
         To bring together and support the Russian-speaking community based in the
         Netherlands and Europe that shares the above values.
       </p>
@@ -532,19 +533,31 @@
           />
         </a>
       </div>
+
       <div class="link">
         <a href="https://www.pegasusboek.nl">
-          <img
-            src="./images/logos/logo15.png"
+          <img            src="./images/logos/logo15.png"
             alt="pegasusboek logo"
           />
         </a>
       </div>
+
       <div class="link">
         <img src="./images/logos/logo16.png" alt="vol logo" />
       </div>
-    </div>
-    <br />
+
+      <div class="link">
+        <a href="https://linktr.ee/fem_antiwar_resistance">
+        <img src="./images/logos/logo17.png" alt="feminist logo" />
+      </a>
+      </div>
+
+      <div class="link">
+    <a href="https://avtozak.info/">
+      <img src="./images/logos/logo18.png" alt="vol logo" />
+    </a>
+  </div>
+      <br />
   </div>
 </main>
 <footer>

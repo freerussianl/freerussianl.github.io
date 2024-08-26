@@ -149,6 +149,7 @@
             </li>
             <li>tolerantie en non-discriminatie;</li>
             <li>rechtsstaat en onafhankelijkheid van de rechterlijke macht.</li>
+            <br>
             Het bijeenbrengen en ondersteunen van de in Nederland en Europa gevestigde
             Russischtalige gemeenschap die de bovengenoemde waarden deelt.
           </p>
@@ -565,6 +566,7 @@
               />
             </a>
           </div>
+
           <div class="link">
             <a href="https://www.pegasusboek.nl">
               <img
@@ -573,10 +575,22 @@
               />
             </a>
           </div>
+          
           <div class="link">
             <img src="./images/logos/logo16.png" alt="vol logo" />
           </div>
-        </div>
+
+          <div class="link">
+            <a href="https://linktr.ee/fem_antiwar_resistance">
+            <img src="./images/logos/logo17.png" alt="feminist logo" />
+          </a>
+          </div>
+    
+          <div class="link">
+        <a href="https://avtozak.info/">
+          <img src="./images/logos/logo18.png" alt="vol logo" />
+        </a>
+      </div>
         <br />
       </div>
     </main>
