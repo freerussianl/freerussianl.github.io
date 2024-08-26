@@ -138,6 +138,8 @@
       <br />
     </div>
   </div>
+  <br>   <br>
+
   <div bind:this={scrollToSections[1]}>
     <h1 class="maintitle">Мероприятия</h1>
     <div class="about">
@@ -197,6 +199,8 @@
       </ul>
     </div>
   </div>
+  <br>   <br>
+
   <div bind:this={scrollToSections[2]}>
     <h1 class="maintitle">Наша работа</h1>
     <div class="documents">
@@ -247,6 +251,8 @@
       </div>
     </div>
   </div>
+  <br>   <br>
+
   <div bind:this={scrollToSections[3]}>
     <h1 class="maintitle">Сотрудничество</h1>
     <div class="about">
@@ -295,6 +301,8 @@
       </a>
     </div>
   </div>
+  <br>   <br>
+
   <div bind:this={scrollToSections[4]}>
     <h1 class="maintitle">Участники правления</h1>
     <div class="about">
@@ -317,6 +325,8 @@
       <br />
     </div>
   </div>
+  <br>   <br>
+
   <div bind:this={scrollToSections[5]}>
     <h1 class="maintitle">Пресса и СМИ</h1>
     <div class="documents">
@@ -350,6 +360,8 @@
       </ul>
     </div>
   </div>
+  <br>   <br>
+
   <div bind:this={scrollToSections[6]}>
     <h1 class="maintitle">Контакты</h1>
     <div class="about">
@@ -390,11 +402,9 @@
       <br />
     </div>
   </div>
-  <div bind:this={scrollToSections[7]}>
-    <a href="https://ru.freerussia.nl/blog">
-      <img src="/images/blog_ru.png" alt="Blog" class="img_community" />
-    </a>
-  </div>
+  
+  <br>   <br>
+
   <div>
     <h1 class="maintitle">Соцсети</h1>
     <div class="links">
@@ -421,6 +431,8 @@
       </div>
     </div>
   </div>
+  <br>   <br>
+
   <div>
     <br />
     <h1 class="maintitle">Оставайтесь на связи</h1>
@@ -436,15 +448,12 @@
     </div>
     <p class="past">Подпишитесь на нашу рассылку</p>
   </div>
+  <br>   <br>
+
   <div>
     <hr />
     <h1 class="maintitle">Партнёры</h1>
     <div class="links-container">
-      <div class="link">
-        <a href="https://alegotour.com/en/">
-          <img src="./images/logos/logo1.png" width="58" alt="alegotour logo" />
-        </a>
-      </div>
       <div class="link">
         <a href="https://www.vrijpaleis.nl/">
           <img src="./images/logos/logo2.png" alt="vrijpaleis logo" />
@@ -473,6 +482,75 @@
           <img src="./images/logos/logo7.png" alt="wfu logo" />
         </a>
       </div>
+      <div class="link">
+        <a href="https://debalie.nl/">
+          <img
+            src="./images/logos/logo8.png"
+            alt="debalie logo"
+          />
+        </a>
+      </div>
+      <div class="link wide">
+        <a href="https://www.instagram.com/teamnavalny_nld/">
+          <img
+            src="./images/logos/logo9.png"
+            width="130"
+            alt="teamnavalny logo"
+          />
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://www.politzk.com/en">
+          <img
+            src="./images/logos/logo10.png"
+            alt="politzk logo"
+          />
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://fondsburgerbewegingen.nl">
+          <img
+            src="./images/logos/logo11.png"
+            alt="fondsburgerbewegingen logo"
+          />
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://en.ovdinfo.org">
+          <img
+            src="./images/logos/logo12.png"
+            alt="ovdinfo logo"
+          />
+        </a>
+      </div>
+      <div class="link wide">
+        <a href="https://www.wejansenfonds.eu/">
+          <img
+            src="./images/logos/logo13.png"
+            width="100"
+            alt="wejansenfonds logo"
+          />
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://hetactiefonds.nl">
+          <img
+            src="./images/logos/logo14.png"
+            alt="hetactiefonds logo"
+          />
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://www.pegasusboek.nl">
+          <img
+            src="./images/logos/logo15.png"
+            alt="pegasusboek logo"
+          />
+        </a>
+      </div>
+      <div class="link">
+        <img src="./images/logos/logo16.png" alt="vol logo" />
+      </div>
     </div>
     <br />
   </div>
@@ -487,7 +565,6 @@
       <li on:click={() => handleClick(4)}>Участницы правления →</li>
       <li on:click={() => handleClick(5)}>Пресса и СМИ →</li>
       <li on:click={() => handleClick(6)}>Контакты →</li>
-      <li on:click={() => handleClick(7)}>Блог →</li>
     </ul>
   </nav>
   <br />

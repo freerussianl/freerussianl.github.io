@@ -126,7 +126,12 @@
           </p>
           <br />
         </div>
-        <img src="/images/community_new.jpeg" style="border-radius: 20px" alt="Community" class="img_community" />
+        <img
+          src="/images/community_new.jpeg"
+          style="border-radius: 20px"
+          alt="Community"
+          class="img_community"
+        />
         <div class="about">
           <h4 class="title">De doelstellingen</h4>
           <h4 class="bold">
@@ -150,6 +155,7 @@
           <br />
         </div>
       </div>
+      <br>   <br>
       <div bind:this={scrollToSections[1]}>
         <h1 class="maintitle">Upcoming and past events</h1>
         <div class="about">
@@ -209,6 +215,7 @@
           </ul>
         </div>
       </div>
+      <br>   <br>
       <div bind:this={scrollToSections[2]}>
         <h1 class="maintitle">Ons werk</h1>
         <div class="documents">
@@ -268,6 +275,7 @@
           </div>
         </div>
       </div>
+      <br>   <br>
       <div bind:this={scrollToSections[3]}>
         <h1 class="maintitle">Samenwerking</h1>
         <div class="about">
@@ -319,6 +327,7 @@
           </a>
         </div>
       </div>
+      <br><br>
       <div bind:this={scrollToSections[4]}>
         <h1 class="maintitle">Bestuursleden</h1>
         <div class="about">
@@ -341,6 +350,7 @@
           <br />
         </div>
       </div>
+      <br><br>
       <div bind:this={scrollToSections[5]}>
         <h1 class="maintitle">Pers en media</h1>
         <div class="documents">
@@ -380,6 +390,7 @@
           </ul>
         </div>
       </div>
+      <br>   <br>
       <div bind:this={scrollToSections[6]}>
         <h1 class="maintitle">Contacten</h1>
         <div class="about">
@@ -419,12 +430,8 @@
           <br />
         </div>
       </div>
-      <div bind:this={scrollToSections[7]}>
-        <a href="https://ru.freerussia.nl/blog">
-          <img src="/images/blog.png" alt="Blog" class="img_community" />
-        </a>
-      </div>
-      <div>
+      <br>   <br>
+           <div>
         <h1 class="maintitle">Volg ons via</h1>
         <div class="links">
           <div class="button_container">
@@ -450,8 +457,8 @@
           </div>
         </div>
       </div>
+      <br>   <br>
       <div>
-        <br />
         <h1 class="maintitle">Blijf op de hoogte</h1>
         <div class="button_container">
           <input
@@ -464,21 +471,14 @@
             >&#65291</button
           >
         </div>
+
         <p class="past">Schrijf je in voor onze nieuwsbrief</p>
       </div>
+      <br>   <br>
       <div>
         <hr />
         <h1 class="maintitle">Partners</h1>
         <div class="links-container">
-          <div class="link">
-            <a href="https://alegotour.com/en/">
-              <img
-                src="./images/logos/logo1.png"
-                width="58"
-                alt="alegotour logo"
-              />
-            </a>
-          </div>
           <div class="link">
             <a href="https://www.vrijpaleis.nl/">
               <img src="./images/logos/logo2.png" alt="vrijpaleis logo" />
@@ -507,6 +507,75 @@
               <img src="./images/logos/logo7.png" alt="wfu logo" />
             </a>
           </div>
+          <div class="link">
+            <a href="https://debalie.nl/">
+              <img
+                src="./images/logos/logo8.png"
+                alt="debalie logo"
+              />
+            </a>
+          </div>
+          <div class="link wide">
+            <a href="https://www.instagram.com/teamnavalny_nld/">
+              <img
+                src="./images/logos/logo9.png"
+                width="130"
+                alt="teamnavalny logo"
+              />
+            </a>
+          </div>
+          <div class="link">
+            <a href="https://www.politzk.com/en">
+              <img
+                src="./images/logos/logo10.png"
+                alt="politzk logo"
+              />
+            </a>
+          </div>
+          <div class="link">
+            <a href="https://fondsburgerbewegingen.nl">
+              <img
+                src="./images/logos/logo11.png"
+                alt="fondsburgerbewegingen logo"
+              />
+            </a>
+          </div>
+          <div class="link">
+            <a href="https://en.ovdinfo.org">
+              <img
+                src="./images/logos/logo12.png"
+                alt="ovdinfo logo"
+              />
+            </a>
+          </div>
+          <div class="link wide">
+            <a href="https://www.wejansenfonds.eu/">
+              <img
+                src="./images/logos/logo13.png"
+                width="100"
+                alt="wejansenfonds logo"
+              />
+            </a>
+          </div>
+          <div class="link">
+            <a href="https://hetactiefonds.nl">
+              <img
+                src="./images/logos/logo14.png"
+                alt="hetactiefonds logo"
+              />
+            </a>
+          </div>
+          <div class="link">
+            <a href="https://www.pegasusboek.nl">
+              <img
+                src="./images/logos/logo15.png"
+                alt="pegasusboek logo"
+              />
+            </a>
+          </div>
+          <div class="link">
+            <img src="./images/logos/logo16.png" alt="vol logo" />
+          </div>
         </div>
         <br />
       </div>
@@ -521,7 +590,6 @@
           <li on:click={() => handleClick(4)}>Bestuursleden →</li>
           <li on:click={() => handleClick(5)}>Pers en media →</li>
           <li on:click={() => handleClick(6)}>Contacten →</li>
-          <li on:click={() => handleClick(7)}>Blog →</li>
         </ul>
       </nav>
       <br />
