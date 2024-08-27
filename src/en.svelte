@@ -130,12 +130,14 @@
         </li>
         <li>- tolerance and non-discrimination;</li>
         <li>- rule of law and independence of the judiciary.</li>
+        <br>
         To bring together and support the Russian-speaking community based in the
         Netherlands and Europe that shares the above values.
       </p>
       <br />
     </div>
   </div>
+  <br><br>
   <div bind:this={scrollToSections[1]}>
     <h1 class="maintitle">Events</h1>
     <div class="about">
@@ -195,6 +197,8 @@
       </ul>
     </div>
   </div>
+  <br><br>
+
   <div bind:this={scrollToSections[2]}>
     <h1 class="maintitle">Our work</h1>
     <div class="documents">
@@ -245,6 +249,8 @@
       </div>
     </div>
   </div>
+  <br><br>
+
   <div bind:this={scrollToSections[3]}>
     <h1 class="maintitle">Summary</h1>
     <div class="about">
@@ -293,6 +299,8 @@
       </a>
     </div>
   </div>
+  <br><br>
+
   <div bind:this={scrollToSections[4]}>
     <h1 class="maintitle">Board members</h1>
     <div class="about">
@@ -315,6 +323,8 @@
       <br />
     </div>
   </div>
+  <br><br>
+
   <div bind:this={scrollToSections[5]}>
     <h1 class="maintitle">Press and media</h1>
     <div class="documents">
@@ -348,6 +358,8 @@
       </ul>
     </div>
   </div>
+  <br><br>
+
   <div bind:this={scrollToSections[6]}>
     <h1 class="maintitle">Contacts</h1>
     <div class="about">
@@ -384,11 +396,8 @@
       <br />
     </div>
   </div>
-  <div bind:this={scrollToSections[7]}>
-    <a href="https://ru.freerussia.nl/blog">
-      <img src="/images/blog_en.png" alt="Blog" class="img_community" />
-    </a>
-  </div>
+  <br><br>
+
   <div>
     <h1 class="maintitle">Follow us</h1>
     <div class="links">
@@ -415,6 +424,8 @@
       </div>
     </div>
   </div>
+  <br><br>
+
   <div>
     <br />
     <h1 class="maintitle">Stay informed</h1>
@@ -430,15 +441,12 @@
     </div>
     <p class="past">Sign up for our newsletter</p>
   </div>
+  <br><br>
+
   <div>
     <hr />
     <h1 class="maintitle">Partners</h1>
     <div class="links-container">
-      <div class="link">
-        <a href="https://alegotour.com/en/">
-          <img src="./images/logos/logo1.png" width="58" alt="alegotour logo" />
-        </a>
-      </div>
       <div class="link">
         <a href="https://www.vrijpaleis.nl/">
           <img src="./images/logos/logo2.png" alt="vrijpaleis logo" />
@@ -467,8 +475,89 @@
           <img src="./images/logos/logo7.png" alt="wfu logo" />
         </a>
       </div>
-    </div>
-    <br />
+      <div class="link">
+        <a href="https://debalie.nl/">
+          <img
+            src="./images/logos/logo8.png"
+            alt="debalie logo"
+          />
+        </a>
+      </div>
+      <div class="link wide">
+        <a href="https://www.instagram.com/teamnavalny_nld/">
+          <img
+            src="./images/logos/logo9.png"
+            width="130"
+            alt="teamnavalny logo"
+          />
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://www.politzk.com/en">
+          <img
+            src="./images/logos/logo10.png"
+            alt="politzk logo"
+          />
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://fondsburgerbewegingen.nl">
+          <img
+            src="./images/logos/logo11.png"
+            alt="fondsburgerbewegingen logo"
+          />
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://en.ovdinfo.org">
+          <img
+            src="./images/logos/logo12.png"
+            alt="ovdinfo logo"
+          />
+        </a>
+      </div>
+      <div class="link wide">
+        <a href="https://www.wejansenfonds.eu/">
+          <img
+            src="./images/logos/logo13.png"
+            width="100"
+            alt="wejansenfonds logo"
+          />
+        </a>
+      </div>
+      <div class="link">
+        <a href="https://hetactiefonds.nl">
+          <img
+            src="./images/logos/logo14.png"
+            alt="hetactiefonds logo"
+          />
+        </a>
+      </div>
+
+      <div class="link">
+        <a href="https://www.pegasusboek.nl">
+          <img            src="./images/logos/logo15.png"
+            alt="pegasusboek logo"
+          />
+        </a>
+      </div>
+
+      <div class="link">
+        <img src="./images/logos/logo16.png" alt="vol logo" />
+      </div>
+
+      <div class="link">
+        <a href="https://linktr.ee/fem_antiwar_resistance">
+        <img src="./images/logos/logo17.png" alt="feminist logo" />
+      </a>
+      </div>
+
+      <div class="link">
+    <a href="https://avtozak.info/">
+      <img src="./images/logos/logo18.png" alt="vol logo" />
+    </a>
+  </div>
+      <br />
   </div>
 </main>
 <footer>
@@ -481,7 +570,6 @@
       <li on:click={() => handleClick(4)}>Board Members →</li>
       <li on:click={() => handleClick(5)}>Press and media →</li>
       <li on:click={() => handleClick(6)}>Contacts →</li>
-      <li on:click={() => handleClick(7)}>Blog →</li>
     </ul>
   </nav>
   <br />
