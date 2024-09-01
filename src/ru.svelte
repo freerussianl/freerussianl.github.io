@@ -305,11 +305,7 @@
           >секретарь</span
         >
       </p>
-      <p>
-        <span class="black">Кристина Петрасова — </span><span class="blue"
-          >казначей</span
-        >
-      </p>
+   
       <br />
     </div>
   </div>
