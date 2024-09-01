@@ -343,11 +343,7 @@
               >secretaris</span
             >
           </p>
-          <p>
-            <span class="black">Kristina Petrasova — </span><span class="blue"
-              >penningmeester</span
-            >
-          </p>
+          
           <br />
         </div>
       </div>

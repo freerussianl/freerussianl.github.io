@@ -315,11 +315,7 @@
           >secretary</span
         >
       </p>
-      <p>
-        <span class="black">Kristina Petrasova — </span><span class="blue"
-          >treasurer</span
-        >
-      </p>
+     
       <br />
     </div>
   </div>
