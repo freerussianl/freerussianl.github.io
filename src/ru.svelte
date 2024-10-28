@@ -305,7 +305,11 @@
           >секретарь</span
         >
       </p>
-   
+      <p>
+        <span class="black">Ольга Сливко — </span><span class="blue"
+          >казначей</span
+        >
+      </p>
       <br />
     </div>
   </div>

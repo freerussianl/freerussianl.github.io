@@ -343,7 +343,11 @@
               >secretaris</span
             >
           </p>
-          
+          <p>
+            <span class="black">Olga Slivko — </span><span class="blue"
+              >penningmeester</span
+            >
+          </p>
           <br />
         </div>
       </div>
