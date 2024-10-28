@@ -315,7 +315,11 @@
           >secretary</span
         >
       </p>
-     
+      <p>
+        <span class="black">Olga Slivko — </span><span class="blue"
+          >treasurer</span
+        >
+      </p>
       <br />
     </div>
   </div>
