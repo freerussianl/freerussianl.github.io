@@ -377,8 +377,8 @@
       </p>
       <img src="/images/envelope.svg" alt="envelope" />
       <span class="bold"
-        >&nbsp;&nbsp;&nbsp;<a href="mailto:info@freerussia.nl"
-          >info@freerussia.nl</a
+        >&nbsp;&nbsp;&nbsp;<a href="mailto:weare@freerussia.nl"
+          >weare@freerussia.nl</a
         ></span
       >
       <br />
