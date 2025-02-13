@@ -353,17 +353,24 @@
   <div bind:this={scrollToSections[6]}>
     <h1 class="maintitle">Контакты</h1>
     <div class="about">
-      <p class="text"><br />Хотите стать волонтером? Мы рады энтузиастам и ценим разнообразие навыков! Присоединяйтесь к нашим волонтерам или поделитесь своей историей в блоге.
-      Если вы представляете СМИ или хотите опубликовать статью, свяжитесь с нами:  <br />  <br /> 
+      <br />
+      <p class="text">Станьте волонтером! Мы ценим энтузиазм и разнообразие навыков. Присоединяйтесь к нашей команде или поделитесь своей историей в блоге:  <br />  <br /> 
         <img src="/images/envelope.svg" alt="envelope" />
         <span class="bold"
           >&nbsp;&nbsp;&nbsp;<a href="mailto:weare@freerussia.nl"
             >weare@freerussia.nl</a
           ></span >
-        <br /><br />Узнайте больше о наших мероприятиях или задайте любой вопрос нам по электронной почте. </p>    
-
+          <br /> 
+          <br />
+          <p class="text">Если вы представляете СМИ, свяжитесь с нами:</p>
+          <img src="/images/envelope.svg" alt="envelope" />
+          <span class="bold"
+            >&nbsp;&nbsp;&nbsp;<a href="mailto:press@freerussia.nl"
+              >press@freerussia.nl</a
+            ></span>
       <br />
-     
+      <br />
+      <br />
     </div>
   </div>
   

@@ -396,17 +396,24 @@
       <div bind:this={scrollToSections[6]}>
     <h1 class="maintitle">Contacten</h1>
     <div class="about">
-      <p class="text"><br />Wil je vrijwilliger worden? Wij verwelkomen enthousiaste mensen en waarderen verschillende vaardigheden! Sluit je aan bij onze vrijwilligers of deel jouw verhaal op onze blog.
-        Vertegenwoordig je de media of wil je een artikel publiceren? Neem contact met ons op:  <br />  <br /> 
+      <br />
+      <p class="text">Word vrijwilliger! We waarderen enthousiasme en een verscheidenheid aan vaardigheden. Sluit je aan bij ons team of deel je verhaal op onze blog: <br />  <br /> 
         <img src="/images/envelope.svg" alt="envelope" />
         <span class="bold"
           >&nbsp;&nbsp;&nbsp;<a href="mailto:weare@freerussia.nl"
             >weare@freerussia.nl</a
           ></span >
-        <br /><br />Lees meer over onze evenementen of stel ons een vraag per e-mail.      </p>    
-
+          <br /> 
+          <br />
+          <p class="text">Als je de media vertegenwoordigt, neem dan contact met ons op:          </p>
+          <img src="/images/envelope.svg" alt="envelope" />
+          <span class="bold"
+            >&nbsp;&nbsp;&nbsp;<a href="mailto:press@freerussia.nl"
+              >press@freerussia.nl</a
+            ></span>
       <br />
-     
+      <br />
+      <br />
     </div>
   </div>
 
