@@ -353,41 +353,17 @@
   <div bind:this={scrollToSections[6]}>
     <h1 class="maintitle">Контакты</h1>
     <div class="about">
-      <p class="text">Если вы представляете СМИ, свяжитесь с нами:</p>
-      <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold"
-        >&nbsp;&nbsp;&nbsp;<a href="mailto:press@freerussia.nl"
-          >press@freerussia.nl</a
-        ></span
-      >
+      <p class="text"><br />Хотите стать волонтером? Мы рады энтузиастам и ценим разнообразие навыков! Присоединяйтесь к нашим волонтерам или поделитесь своей историей в блоге.
+      Если вы представляете СМИ или хотите опубликовать статью, свяжитесь с нами:  <br />  <br /> 
+        <img src="/images/envelope.svg" alt="envelope" />
+        <span class="bold"
+          >&nbsp;&nbsp;&nbsp;<a href="mailto:weare@freerussia.nl"
+            >weare@freerussia.nl</a
+          ></span >
+        <br /><br />Узнайте больше о наших мероприятиях или задайте любой вопрос нам по электронной почте. </p>    
+
       <br />
-      <hr />
-      <p class="text">
-        Хотите стать волонтером? Замечательно! Мы приветствуем энтузиазм и
-        разнообразные навыки. Ознакомьтесь с нашими мероприятиями, оцените ваше
-        свободное время и энергию, и напишите нам:
-      </p>
-      <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold"
-        >&nbsp;&nbsp;&nbsp;<a href="mailto:weare@freerussia.nl"
-          >weare@freerussia.nl</a
-        ></span
-      >
-      <br />
-      <hr />
-      <p class="text">
-        Поделитесь своей историей! На нашем блоге мы публикуем статьи участников
-        нашего сообщества и подписчиков. Интересно? Отправьте свою статью по
-        адресу:
-      </p>
-      <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold"
-        >&nbsp;&nbsp;&nbsp;<a href="mailto:editorial@freerussia.nl"
-          >editorial@freerussia.nl</a
-        ></span
-      >
-      <br />
-      <br />
+     
     </div>
   </div>
   

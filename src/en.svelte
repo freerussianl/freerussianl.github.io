@@ -363,37 +363,17 @@
   <div bind:this={scrollToSections[6]}>
     <h1 class="maintitle">Contacts</h1>
     <div class="about">
-      <p class="text">Are you from the media? Get in touch with us:</p>
-      <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold"
-        >&nbsp;&nbsp;&nbsp;<a href="mailto:press@freerussia.nl"
-          >press@freerussia.nl</a
-        ></span
-      >
+      <p class="text"><br />Want to become a volunteer? We welcome enthusiastic people and appreciate diverse skills! Join our volunteers or share your story on our blog.
+        Do you represent the media or want to publish an article? Get in touch with us:  <br />  <br /> 
+        <img src="/images/envelope.svg" alt="envelope" />
+        <span class="bold"
+          >&nbsp;&nbsp;&nbsp;<a href="mailto:weare@freerussia.nl"
+            >weare@freerussia.nl</a
+          ></span >
+        <br /><br />Learn more about our events or ask us any question via email. </p>    
+
       <br />
-      <hr />
-      <p class="text">
-        Would you like to become a volunteer? Great! We welcome enthusiastic people with different skills and knowledge. Read about our activities, estimate your free time and energy, and write to us:
-      </p>
-      <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold"
-        >&nbsp;&nbsp;&nbsp;<a href="mailto:weare@freerussia.nl"
-          >weare@freerussia.nl</a
-        ></span
-      >
-      <br />
-      <hr />
-      <p class="text">
-        Share your story! On the blog, we publish articles by our community members and subscribers. Interested? Send your article to:
-      </p>
-      <img src="/images/envelope.svg" alt="envelope" />
-      <span class="bold"
-        >&nbsp;&nbsp;&nbsp;<a href="mailto:editorial@freerussia.nl"
-          >editorial@freerussia.nl</a
-        ></span
-      >
-      <br />
-      <br />
+     
     </div>
   </div>
   <br><br>

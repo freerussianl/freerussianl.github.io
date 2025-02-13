@@ -392,45 +392,25 @@
         </div>
       </div>
       <br>   <br>
+
       <div bind:this={scrollToSections[6]}>
-        <h1 class="maintitle">Contacten</h1>
-        <div class="about">
-          <p class="text">Bent u van de media? Neem contact met ons op:</p>
-          <img src="/images/envelope.svg" alt="envelope" />
-          <span class="bold"
-            >&nbsp;&nbsp;&nbsp;<a href="mailto:press@freerussia.nl"
-              >press@freerussia.nl</a
-            ></span
-          >
-          <br />
-          <hr />
-          <p class="text">
-            Wil je vrijwilliger worden? Geweldig! Wij verwelkomen enthousiaste
-            mensen met verschillende vaardigheden en kennis. Lees over onze
-            activiteiten, schat je vrije tijd en energie in, en schrijf ons:
-          </p>
-          <img src="/images/envelope.svg" alt="envelope" />
-          <span class="bold"
-            >&nbsp;&nbsp;&nbsp;<a href="mailto:weare@freerussia.nl"
-              >weare@freerussia.nl</a
-            ></span
-          >
-          <br />
-          <hr />
-          <p class="text">
-            Deel je verhaal! Op de blog publiceren we artikelen van onze
-            communityleden en abonnees. Interesse? Stuur uw artikel naar:
-          </p>
-          <img src="/images/envelope.svg" alt="envelope" />
-          <span class="bold"
-            >&nbsp;&nbsp;&nbsp;<a href="mailto:editorial@freerussia.nl"
-              >editorial@freerussia.nl</a
-            ></span
-          >
-          <br />
-          <br />
-        </div>
-      </div>
+    <h1 class="maintitle">Contacten</h1>
+    <div class="about">
+      <p class="text"><br />Wil je vrijwilliger worden? Wij verwelkomen enthousiaste mensen en waarderen verschillende vaardigheden! Sluit je aan bij onze vrijwilligers of deel jouw verhaal op onze blog.
+        Vertegenwoordig je de media of wil je een artikel publiceren? Neem contact met ons op:  <br />  <br /> 
+        <img src="/images/envelope.svg" alt="envelope" />
+        <span class="bold"
+          >&nbsp;&nbsp;&nbsp;<a href="mailto:weare@freerussia.nl"
+            >weare@freerussia.nl</a
+          ></span >
+        <br /><br />Lees meer over onze evenementen of stel ons een vraag per e-mail.      </p>    
+
+      <br />
+     
+    </div>
+  </div>
+
+
       <br>   <br>
            <div>
         <h1 class="maintitle">Volg ons via</h1>
