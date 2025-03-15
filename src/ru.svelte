@@ -194,6 +194,39 @@
     <div class="documents">
       <br />
       <p class="text">
+        Интервью с защитником Азовстали
+      </p>
+      <div class="button_container">
+        <a
+          href="/docs/stanislav-dutov.docx.pdf"
+        >
+          <img src="/images/download.svg" alt="download" />
+        </a>
+      </div>
+      <hr />
+      <p class="text">
+        Оппозиционная деятельность онлайн: преследование и последствия (по-английски)
+      </p>
+      <div class="button_container">
+        <a
+          href="/docs/Oppositional_Online_Activity.pdf"
+        >
+          <img src="/images/download.svg" alt="download" />
+        </a>
+      </div>
+      <hr />
+      <p class="text">
+        Взаимодействие с адвокатом по миграционным вопросам
+      </p>
+      <div class="button_container">
+        <a
+          href="/docs/change-attorney.pdf"
+        >
+          <img src="/images/download.svg" alt="download" />
+        </a>
+      </div>
+      <hr />
+      <p class="text">
         Призыв к усовершенствованию иммиграционной политики для граждан России,
         подвергающихся постоянной мобилизации в России.
       </p>
@@ -295,11 +328,6 @@
     <h1 class="maintitle">Участники правления</h1>
     <div class="about">
       <br />
-      <p>
-        <span class="black">Александр Казаков — </span><span class="blue"
-          >председатель</span
-        >
-      </p>
       <p>
         <span class="black">Кирилл Шмидт — </span><span class="blue"
           >секретарь</span

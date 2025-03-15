@@ -204,6 +204,39 @@
     <div class="documents">
       <br />
       <p class="text">
+        Interview with a defender of Azovstal (in Russian)
+      </p>
+      <div class="button_container">
+        <a
+          href="/docs/stanislav-dutov.docx.pdf"
+        >
+          <img src="/images/download.svg" alt="download" />
+        </a>
+      </div>
+      <hr />
+      <p class="text">
+        Oppositional Online Activity: Prosecutions and Its Consequences
+      </p>
+      <div class="button_container">
+        <a
+          href="/docs/Oppositional_Online_Activity.pdf"
+        >
+          <img src="/images/download.svg" alt="download" />
+        </a>
+      </div>
+      <hr />
+      <p class="text">
+        Working with an Immigration Lawyer (in Russian)
+      </p>
+      <div class="button_container">
+        <a
+          href="/docs/change-attorney.pdf"
+        >
+          <img src="/images/download.svg" alt="download" />
+        </a>
+      </div>
+      <hr />
+      <p class="text">
         Call for a nuanced immigration policy for Russian citizens under the
         ongoing mobilization in Russia.
       </p>
@@ -305,11 +338,6 @@
     <h1 class="maintitle">Board members</h1>
     <div class="about">
       <br />
-      <p>
-        <span class="black">Alexander Kazakov — </span><span class="blue"
-          >chairman</span
-        >
-      </p>
       <p>
         <span class="black">Cyril Schmidt — </span><span class="blue"
           >secretary</span
