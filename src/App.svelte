@@ -222,6 +222,39 @@
         <div class="documents">
           <br />
           <p class="text">
+            Interview met de verdediger van Azovstal (in het Russisch)
+          </p>
+          <div class="button_container">
+            <a
+              href="/docs/stanislav-dutov.docx.pdf"
+            >
+              <img src="/images/download.svg" alt="download" />
+            </a>
+          </div>
+          <hr />
+          <p class="text">
+            Oppositional Online Activity: Prosecutions and Its Consequences (in het Engels)
+          </p>
+          <div class="button_container">
+            <a
+              href="/docs/Oppositional_Online_Activity.pdf"
+            >
+              <img src="/images/download.svg" alt="download" />
+            </a>
+          </div>
+          <hr />
+          <p class="text">
+            Samenwerking met een immigratieadvocaat (in het Russisch)
+          </p>
+          <div class="button_container">
+            <a
+              href="/docs/change-attorney.pdf"
+            >
+              <img src="/images/download.svg" alt="download" />
+            </a>
+          </div>
+          <hr />
+          <p class="text">
             Appeal regarding suicide of Russian citizens in 2023
           </p>
           <div class="button_container">
@@ -333,11 +366,6 @@
         <h1 class="maintitle">Bestuursleden</h1>
         <div class="about">
           <br />
-          <p>
-            <span class="black">Alexander Kazakov — </span><span class="blue"
-              >voorzitter</span
-            >
-          </p>
           <p>
             <span class="black">Cyril Schmidt — </span><span class="blue"
               >secretaris</span
