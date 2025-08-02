@@ -1,6 +1,8 @@
 from abc import ABC, abstractmethod
 
 from database import async_session_maker
+from events.repository import EventsRepository
+from users.repository import UsersRepository
 
 
 class IUnitOfWork(ABC):
@@ -27,6 +29,9 @@ class UnitOfWork:
     async def __aenter__(self):
         self.session = self.session_factory()
 
+        self.events = EventsRepository(self.session)
+        self.users = UsersRepository(self.session)
+        
     async def __aexit__(self, exc_type, exc_val, exc_tb):
         if exc_type:
             await self.rollback()
