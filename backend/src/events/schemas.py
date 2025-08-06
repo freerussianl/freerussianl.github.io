@@ -5,8 +5,8 @@ from pydantic import UUID4, BaseModel
 
 class EventBase(BaseModel):
     title: str
-    description: str
     date: datetime
+    link: str
 
 
 class EventView(EventBase):
