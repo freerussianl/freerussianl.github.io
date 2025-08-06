@@ -6,6 +6,7 @@ from pydantic import UUID4
 from events.exceptions import EventNotFoundException
 from events.models import Event
 from events.schemas import EventCreate
+from schemas import DefaultFilter
 from unit_of_work import UnitOfWork
 
 
@@ -28,9 +29,9 @@ class EventsService:
             
             return event
 
-    async def get_events(self) -> List[Optional[Event]]:
+    async def get_events(self, *, filter: DefaultFilter) -> List[Optional[Event]]:
         async with self.uow:
-            events = await self.uow.events.get_all()
+            events = await self.uow.events.get_all(filter=filter)
             return events
 
     async def delete_event(self, *, event_id: UUID4) -> None:

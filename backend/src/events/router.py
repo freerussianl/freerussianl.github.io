@@ -1,9 +1,10 @@
 from typing import List
-from fastapi import APIRouter, status
+from fastapi import APIRouter, status, Depends
 from pydantic import UUID4
 
 from events.dependencies import EventsServiceDependency
 from events.schemas import EventCreate, EventView
+from schemas import DefaultFilter
 
 router = APIRouter()
 
@@ -23,9 +24,11 @@ async def get_event(event_id: UUID4, service: EventsServiceDependency):
 
 
 @router.get("", response_model=List[EventView], status_code=status.HTTP_200_OK)
-async def get_events(service: EventsServiceDependency):
+async def get_events(
+    service: EventsServiceDependency, filter: DefaultFilter = Depends()
+):
     """Get events"""
-    events = await service.get_events()
+    events = await service.get_events(filter=filter)
     return events
 
 
