@@ -5,6 +5,7 @@ from pydantic import UUID4
 
 from articles.models import Article
 from articles.schemas import ArticleCreate
+from schemas import DefaultFilter
 from unit_of_work import UnitOfWork
 
 
@@ -24,9 +25,9 @@ class ArticlesService:
             article = await self.uow.articles.get(article_id)
             return article
 
-    async def get_articles(self) -> List[Article]:
+    async def get_articles(self, *, filter: DefaultFilter) -> List[Article]:
         async with self.uow:
-            articles = await self.uow.articles.get_all()
+            articles = await self.uow.articles.get_all(filter=filter)
             return articles
 
     async def delete_article(self, *, article_id) -> None:
