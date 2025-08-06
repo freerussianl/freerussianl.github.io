@@ -19,6 +19,12 @@ class BaseConfig(BaseSettings):
         extra="ignore",
     )
     
+   
+class DocumentsConfig(BaseConfig):
+    model_config = SettingsConfigDict(env_prefix="DOCUMENTS_")
+    
+    folder: str = "../documents"
+    
     
 class DatabaseConfig(BaseConfig):
     model_config = SettingsConfigDict(env_prefix="DB_")
@@ -47,7 +53,8 @@ class Settings(BaseConfig):
     FRONTEND_HOST: str = "http://localhost:5173"
     
     database: DatabaseConfig = Field(default_factory=DatabaseConfig)
-    
+    documents: DocumentsConfig = Field(default_factory=DocumentsConfig)
+
     @computed_field
     @property
     def all_cors_origins(self) -> list[str]:

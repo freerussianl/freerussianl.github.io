@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 
 from articles.repository import ArticlesRepository
 from database import async_session_maker
+from documents.repository import DocumentsRepository
 from events.repository import EventsRepository
 from users.repository import UsersRepository
 
@@ -33,6 +34,7 @@ class UnitOfWork:
         self.events = EventsRepository(self.session)
         self.users = UsersRepository(self.session)
         self.articles = ArticlesRepository(self.session)
+        self.documents = DocumentsRepository(self.session)
         
     async def __aexit__(self, exc_type, exc_val, exc_tb):
         if exc_type:

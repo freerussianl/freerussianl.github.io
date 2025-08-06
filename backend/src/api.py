@@ -2,8 +2,10 @@ from fastapi import APIRouter
 
 from articles.router import router as articles_router
 from events.router import router as events_router
+from documents.router import router as documents_router
 
 api_router = APIRouter(prefix="/api")
 
 api_router.include_router(events_router, prefix="/events", tags=["Events"])
 api_router.include_router(articles_router, prefix="/articles", tags=["Articles"])
+api_router.include_router(documents_router, prefix="/documents", tags=["Documents"])
