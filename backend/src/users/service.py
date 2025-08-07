@@ -16,9 +16,9 @@ class UsersService:
         async with self.uow:
             user = await self.uow.users.create(data)
             await self.uow.commit()
-            
+
             return user
-        
+
     async def get_user_by_id(self, *, user_id: UUID4) -> User:
         async with self.uow:
             user = await self.uow.users.get(oid=user_id)
@@ -28,3 +28,8 @@ class UsersService:
         async with self.uow:
             user = await self.uow.users.get_by_email(email=email)
             return user
+
+    async def delete_user(self, *, user_id: UUID4) -> None:
+        async with self.uow:
+            await self.uow.users.delete(oid=user_id)
+            await self.uow.commit()
