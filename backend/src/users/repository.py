@@ -8,7 +8,7 @@ from users.models import User
 
 
 class UsersRepository(BaseRepository):
-    model: User
+    model = User
 
     async def get_by_email(self, *, email: EmailStr) -> Optional[User]:
         user = await self.session.execute(
