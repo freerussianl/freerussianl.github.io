@@ -10,4 +10,4 @@ class User(Base):
     oid = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     email = Column(String(64), nullable=False)
     password = Column(String, nullable=False)
-    
+    role = Column(String, nullable=False)
