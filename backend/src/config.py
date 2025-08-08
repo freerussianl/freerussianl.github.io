@@ -19,7 +19,11 @@ class BaseConfig(BaseSettings):
         extra="ignore",
     )
     
-   
+class AuthConfig(BaseConfig):
+    JWT_SECRET_KEY: SecretStr
+    JWT_ALGORITHM: str
+    
+    
 class DocumentsConfig(BaseConfig):
     model_config = SettingsConfigDict(env_prefix="DOCUMENTS_")
     
@@ -52,6 +56,7 @@ class Settings(BaseConfig):
     ] = []
     FRONTEND_HOST: str = "http://localhost:5173"
     
+    auth: AuthConfig = Field(default_factory=AuthConfig)
     database: DatabaseConfig = Field(default_factory=DatabaseConfig)
     documents: DocumentsConfig = Field(default_factory=DocumentsConfig)
 

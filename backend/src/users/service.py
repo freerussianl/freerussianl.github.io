@@ -3,6 +3,7 @@ from typing import Optional
 
 from pydantic import UUID4, EmailStr
 
+from auth.password import get_hashed_password
 from unit_of_work import UnitOfWork
 from users.models import User
 from users.schemas import UserCreate
@@ -14,6 +15,7 @@ class UsersService:
 
     async def create_user(self, *, data: UserCreate) -> User:
         async with self.uow:
+            data.password = get_hashed_password(data.password)
             user = await self.uow.users.create(data)
             await self.uow.commit()
 
