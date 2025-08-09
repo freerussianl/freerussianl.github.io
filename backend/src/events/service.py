@@ -3,18 +3,24 @@ from typing import List, Optional
 
 from pydantic import UUID4
 
+from auth.exceptions import ResourceNotFoundError
 from events.exceptions import EventNotFoundException
 from events.models import Event
 from events.schemas import EventCreate
 from schemas import DefaultFilter
 from unit_of_work import UnitOfWork
+from users.enums import UserRole
+from users.models import User
 
 
 @dataclass
 class EventsService:
     uow: UnitOfWork
 
-    async def create_event(self, *, data: EventCreate) -> Event:
+    async def create_event(self, *, data: EventCreate, current_user: User) -> Event:
+        if current_user.role != UserRole.ADMIN:
+            raise ResourceNotFoundError()
+        
         async with self.uow:
             event = await self.uow.events.create(data)
             await self.uow.commit()
@@ -34,7 +40,10 @@ class EventsService:
             events = await self.uow.events.get_all(filter=filter)
             return events
 
-    async def delete_event(self, *, event_id: UUID4) -> None:
+    async def delete_event(self, *, event_id: UUID4, current_user: User) -> None:
+        if current_user.role != UserRole.ADMIN:
+            raise ResourceNotFoundError()
+        
         async with self.uow:
             await self.uow.events.delete(oid=event_id)
             await self.uow.commit()

@@ -1,7 +1,10 @@
 from typing import List
+
 from fastapi import APIRouter, status, Depends
+
 from pydantic import UUID4
 
+from dependencies import CurrentUserDependency
 from events.dependencies import EventsServiceDependency
 from events.schemas import EventCreate, EventView
 from schemas import DefaultFilter
@@ -10,9 +13,13 @@ router = APIRouter()
 
 
 @router.post("", response_model=EventView, status_code=status.HTTP_201_CREATED)
-async def create_event(data: EventCreate, service: EventsServiceDependency):
+async def create_event(
+    data: EventCreate,
+    service: EventsServiceDependency,
+    current_user: CurrentUserDependency,
+):
     """Create an event"""
-    event = await service.create_event(data=data)
+    event = await service.create_event(data=data, current_user=current_user)
     return event
 
 
@@ -35,6 +42,10 @@ async def get_events(
 @router.delete(
     "/{event_id}", response_model=None, status_code=status.HTTP_204_NO_CONTENT
 )
-async def delete_event(event_id: UUID4, service: EventsServiceDependency):
+async def delete_event(
+    event_id: UUID4,
+    service: EventsServiceDependency,
+    current_user: CurrentUserDependency,
+):
     """Get events"""
-    await service.delete_event(event_id=event_id)
+    await service.delete_event(event_id=event_id, current_user=current_user)
