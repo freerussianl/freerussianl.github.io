@@ -37,3 +37,13 @@ class ExpiredTokenError(TokenError):
 class InvalidTokenError(TokenError):
     def __init__(self) -> None:
         super().__init__(detail=INVALID_TOKEN_DETAIL)
+
+
+class ResourceNotFoundError(HTTPException):
+    def __init__(
+        self,
+        status_code: int = status.HTTP_404_NOT_FOUND,
+        detail: str = None,
+        headers: dict = None,
+    ):
+        super().__init__(status_code, detail, headers)

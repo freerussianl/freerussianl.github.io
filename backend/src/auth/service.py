@@ -16,7 +16,7 @@ class AuthService:
 
     async def login(self, *, credentials: UserCredentials) -> AccessToken:
         user = await self.users_service.get_user_by_email(email=credentials.email)
-
+        
         if not user:
             raise InvalidCredentialsError()
 

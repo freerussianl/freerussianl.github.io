@@ -12,7 +12,7 @@ class UserCreate(UserCredentials):
     role: UserRole
     
     
-class UserView(UserCredentials):
+class UserView(BaseModel):
     oid: UUID4
     email: EmailStr
     role: UserRole
