@@ -4,6 +4,7 @@ from fastapi import APIRouter, Depends, File, UploadFile
 from fastapi.responses import FileResponse
 from pydantic import UUID4
 
+from dependencies import CurrentUserDependency
 from documents.dependencies import DocumentsServiceDependency
 from documents.schemas import DocumentView
 from documents.utils import get_file_path
@@ -16,10 +17,11 @@ router = APIRouter()
 async def create_document(
     title: str,
     service: DocumentsServiceDependency,
+    current_user: CurrentUserDependency,
     file: UploadFile = File(...),
 ):
     """Create a document"""
-    document = await service.create_document(file=file, title=title)
+    document = await service.create_document(file=file, title=title, current_user=current_user)
     return document
 
 
