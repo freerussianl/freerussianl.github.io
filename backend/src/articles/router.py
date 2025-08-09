@@ -5,6 +5,7 @@ from pydantic import UUID4
 
 from articles.dependencies import ArticlesServiceDependency
 from articles.schemas import ArticleCreate, ArticleView
+from dependencies import CurrentUserDependency
 from schemas import DefaultFilter
 
 router = APIRouter()
@@ -14,9 +15,13 @@ router = APIRouter()
     "",
     response_model=ArticleView,
 )
-async def create_article(data: ArticleCreate, service: ArticlesServiceDependency):
+async def create_article(
+    data: ArticleCreate,
+    service: ArticlesServiceDependency,
+    current_user: CurrentUserDependency,
+):
     """Create an article"""
-    article = await service.create_article(data=data)
+    article = await service.create_article(data=data, current_user=current_user)
     return article
 
 
@@ -39,6 +44,10 @@ async def get_article(article_id: UUID4, service: ArticlesServiceDependency):
 @router.delete(
     "/{article_id}", response_model=None, status_code=status.HTTP_202_ACCEPTED
 )
-async def delete_article(article_id: UUID4, service: ArticlesServiceDependency):
+async def delete_article(
+    article_id: UUID4,
+    current_user: CurrentUserDependency,
+    service: ArticlesServiceDependency,
+):
     """Get articles"""
-    await service.delete_article(article_id=article_id)
+    await service.delete_article(article_id=article_id, current_user=current_user)
