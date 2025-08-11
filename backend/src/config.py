@@ -3,6 +3,8 @@ from typing import Annotated, Any
 from pydantic import AnyUrl, BeforeValidator, Field, SecretStr, computed_field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+from constants import DEFAULT_DOCUMENTS_PATH
+
 
 def parse_cors(v: Any) -> list[str] | str:
     if isinstance(v, str) and not v.startswith("["):
@@ -27,7 +29,7 @@ class AuthConfig(BaseConfig):
 class DocumentsConfig(BaseConfig):
     model_config = SettingsConfigDict(env_prefix="DOCUMENTS_")
     
-    folder: str = "../documents"
+    folder: str = DEFAULT_DOCUMENTS_PATH
     
     
 class DatabaseConfig(BaseConfig):
