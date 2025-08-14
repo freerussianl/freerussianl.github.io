@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body:not(.adminpanel-body) {
+  max-width: 480px;
+  padding: 1em 1em 0 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin: auto;
+}
+
+
+main.index {
+  padding: 2%;
+}
+
+header {
+  display: flex;
+}
+
+header .logo {
+  max-width: 206px;
+}
+
+
+.logo {
+max-width: 206px;
+}
+
+.button_container {
+  margin-left: auto; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header_donate {
+  height: 45px;
+  width: 45px;
+  border-radius: 10px;
+  border: 0;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.header_language {
+  display: flex;
+  height: 45px;
+  width: 45px;
+  align-items: center;      /* Центр по вертикали */
+  justify-content: center;
+  border-radius: 10px;
+  border: 0;
+  background-color: #0097DC;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+}
+
+.header_language img {
+    width: 20px;              /* или auto, или нужный размер */
+    height: 20px;
+    display: block;           /* убирает лишние отступы как inline элемент */
+}
+
+
+.genesis {
+  max-width: 480px;
+  border-radius: 25px;
+  padding: 1px 30px;
+  margin-top: 30px;
+  background-color: #F0FBFF;
+  text-align: left;
+}
+
+.text {    
+  text-align: justify;
+}
+
+.about {
+  max-width: 480px;
+  border-radius: 25px;
+  padding: 1px 30px;
+  margin-top: 15px;
+  background-color: #F5F5F5;
+  text-align: left;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #0097DC;
+  font-weight: 600;
+  font-size: large;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: large;
+  margin-bottom: 0;
+}
+
+.maintitle {
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  margin: 15px 10px;
+}
+
+.black {
+  font-weight: bold;
+}
+
+.blue {
+  color: #0097DC;
+}
+
+.paypal-image {
+  max-width: 100%;
+}
+
+.tikkie {
+  margin: 10px 0 15px 0;
+}
+
+.links {
+  margin: 15px 8px;
+}
+
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin: 8px;
+}
+
+.link {
+  width: 65%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.date {
+  font-size: larger;
+}
+
+.item-title {
+    font-size: larger;
+}
+
+.blog {
+  height: 45px;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  border-width: 1px;
+  border-color: black;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  color: #858585;
+}
+
+.more:hover {
+  text-decoration: underline;
+  cursor:pointer;
+}
+
+hr {
+  height: 3px;
+  background-color: white;
+  border: none;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+ul > ul {
+  margin-bottom: 0.8em;
+}
+
+li {
+  margin: 0.4em 0;
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.email {
+  height: 25px;
+  width: 90%;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  border: 1px solid black;
+}
+
+.email:focus {
+  outline-color: #0097DC;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* расстояние между иконкой и текстом */
+    margin-top: 8px;
+}
+
+.mail img {
+    width: 20px;
+    height: 20px;
+}
+
+.mail a {
+    font-weight: bold;
+    font-size: 16px;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.mail a:hover {
+    text-decoration: underline;
+}

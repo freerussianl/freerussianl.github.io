@@ -1,0 +1,26 @@
+.articles {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    background-color: #F0FBFF;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 16px;
+}
+
+.article .date {
+    color: #005c92; 
+}
+
+.section {
+    max-width: 480px;
+    border-radius: 25px;
+    padding: 1px 30px;
+    margin-top: 15px;
+    background-color: #F0FBFF;
+    text-align: left;
+}

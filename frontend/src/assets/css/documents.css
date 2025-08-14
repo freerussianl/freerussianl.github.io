@@ -1,0 +1,21 @@
+.documents {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    background-color: #F0FBFF;
+}
+
+.document {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.section {
+    max-width: 480px;
+    border-radius: 25px;
+    padding: 1px 30px;
+    margin-top: 15px;
+    background-color: #F0FBFF;
+    text-align: left;
+}
