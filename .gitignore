@@ -1,7 +1,50 @@
-/node_modules/
-/public/build/
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+pytest.ini
+.test.env
+.venv/
+env/
+*.sqlite3
+*.log
+.coverage
 
+# Frontend (Node.js/React/Vite)
+node_modules/
+dist/
+build/
+.env
+*.log
+
+# OS/System
 .DS_Store
+Thumbs.db
 
-# Local Netlify folder
-.netlify
+# IDEs
+.vscode/
+.idea/
+
+# Coverage/Test
+.coverage
+.pytest_cache/
+jest-cache/
+coverage/
+
+# Docker
+*.pid
+*.sock
+*.db
+volumes/
+
+# Other
+TODO
+
+.ruff_cache/
+__pycache__
+.vscode
+.github
