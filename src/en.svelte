@@ -311,7 +311,15 @@
         We are an ANBI Foundation<br />
         (Chamber of Commerce number: 86836935)<br />
       </p>
-
+      <div class="financial-statement-wrapper">
+        <a 
+          href="/docs/Stichting Free Russia - Jaarstukken 2023.pdf"
+          class="financial-statement"
+        >
+          Financial statement 2023
+          <img src="/images/download.svg" alt="download" />
+        </a>
+      </div>
       <form
         action="https://www.paypal.com/donate"
         method="post"

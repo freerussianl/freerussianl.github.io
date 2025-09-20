@@ -301,7 +301,15 @@
         Мы являемся благотворительной организацией ANBI<br />
         (Номер KvK: 86836935)<br />
       </p>
-
+      <div class="financial-statement-wrapper">
+        <a 
+          href="/docs/Stichting Free Russia - Jaarstukken 2023.pdf"
+          class="financial-statement"
+        >
+          Финансовый отчет 2023
+          <img src="/images/download.svg" alt="download" />
+        </a>
+      </div>
       <form
         action="https://www.paypal.com/donate"
         method="post"

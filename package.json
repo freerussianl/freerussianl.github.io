@@ -2,6 +2,9 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "homepage": "https://freerussia.nl/",
+  "engines": {
+    "node": "18.x"
+  },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
