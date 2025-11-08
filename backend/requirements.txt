@@ -2,7 +2,10 @@ fastapi==0.116.1
 uvicorn==0.34.3
 sqlalchemy==2.0.42
 pydantic_settings==2.10.1
-pydantic==2.11.7
+pydantic==2.12.4
 asyncpg==0.30.0
 aiofiles==24.1.0
 python-multipart==0.0.20
+pyjwt==2.10.1
+passlib==1.7.4
+pydantic[email]==2.12.4
