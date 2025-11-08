@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@jridgewell/gen-mapping": "^0.3.5",
+    "@jridgewell/remapping": "^2.3.5",
     "@tailwindcss/vite": "^4.1.11",
     "axios": "^1.11.0",
     "react": "^19.1.0",
