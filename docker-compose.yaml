@@ -48,14 +48,13 @@ services:
     depends_on:
       - backend
     build:
-      context: ./frontend   
+      context: ./frontend
     working_dir: /app
-    command: npm run dev
     volumes:
-      - ./frontend:/app      
-      - /app/node_modules    
+      - ./frontend:/app
+      - /app/node_modules
     ports:
-      - "3000:3000"
+      - "5173:5173"
     env_file:
       - .env
 
