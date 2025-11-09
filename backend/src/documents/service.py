@@ -8,7 +8,7 @@ from auth.exceptions import ResourceNotFoundError
 from dependencies import CurrentUserDependency
 from documents.models import Document
 from documents.schemas import DocumentCreate
-from documents.utils import save_document
+from documents.utils import delete_file, save_document
 from schemas import DefaultFilter
 from unit_of_work import UnitOfWork
 from users.enums import UserRole
@@ -42,3 +42,17 @@ class DocumentsService:
         async with self.uow:
             documents = await self.uow.documents.get_all(filter=filter)
             return documents
+        
+    async def delete_document(self, *, document_id: UUID4) -> None:
+        async with self.uow:
+            document = await self.uow.documents.get(oid=document_id)
+            if not document:
+                return
+            
+            await self.uow.documents.delete(oid=document.oid)
+            await self.uow.commit()
+            
+        try:
+            await delete_file(file_name=document.name)
+        except FileNotFoundError:
+            pass
