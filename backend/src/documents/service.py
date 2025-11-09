@@ -6,6 +6,7 @@ from pydantic import UUID4
 
 from auth.exceptions import ResourceNotFoundError
 from dependencies import CurrentUserDependency
+from documents.exceptions import DocumentNotFoundError
 from documents.models import Document
 from documents.schemas import DocumentCreate
 from documents.utils import delete_file, save_document
@@ -36,6 +37,8 @@ class DocumentsService:
     async def get_document_by_id(self, *, document_id: UUID4) -> Document:
         async with self.uow:
             document = await self.uow.documents.get(oid=document_id)
+            if not document:
+                raise DocumentNotFoundError()
             return document
 
     async def get_documents(self, *, filter: DefaultFilter) -> List[Document]:
