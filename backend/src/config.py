@@ -24,6 +24,7 @@ class BaseConfig(BaseSettings):
 class AuthConfig(BaseConfig):
     JWT_SECRET_KEY: SecretStr
     JWT_ALGORITHM: str
+    TOKEN_EXPIRATION_MINUTES: int = 60
     
     
 class DocumentsConfig(BaseConfig):

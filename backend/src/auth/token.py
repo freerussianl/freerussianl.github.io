@@ -14,7 +14,9 @@ def create_token(data: dict, expires_delta: Optional[timedelta] = None) -> str:
     if expires_delta:
         expire = datetime.now() + expires_delta
     else:
-        expire = datetime.now() + timedelta(minutes=15)
+        expire = datetime.now() + timedelta(
+            minutes=settings.auth.TOKEN_EXPIRATION_MINUTES
+        )
 
     to_encode.update({"exp": expire})
     encoded_jwt = jwt.encode(
@@ -41,7 +43,7 @@ def decode_token(token: str) -> dict:
 
 def get_email_from_token(request: Request) -> str:
     """Get a user email from a request"""
-    token = request.cookies.get('token')
+    token = request.cookies.get("token")
     payload = decode_token(token)
-    
-    return payload['sub']
+
+    return payload["sub"]
