@@ -25,7 +25,15 @@ class UsersService:
             await self.uow.commit()
 
             return user
-
+        
+    async def create_super_user(self, email: EmailStr, password: str) -> None:
+        async with self.uow:
+            data = UserCreate(email=email, password=password, role=UserRole.CREATOR)
+            data.password = get_hashed_password(data.password)
+            
+            await self.uow.users.create(data)
+            await self.uow.commit()
+        
     async def get_user_by_id(self, *, user_id: UUID4) -> User:
         async with self.uow:
             user = await self.uow.users.get(oid=user_id)

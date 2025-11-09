@@ -1,6 +1,6 @@
 from typing import Annotated, Any
 
-from pydantic import AnyUrl, BeforeValidator, Field, SecretStr, computed_field
+from pydantic import AnyUrl, BeforeValidator, EmailStr, Field, SecretStr, computed_field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 from constants import DEFAULT_DOCUMENTS_PATH
@@ -25,6 +25,9 @@ class AuthConfig(BaseConfig):
     JWT_SECRET_KEY: SecretStr
     JWT_ALGORITHM: str
     TOKEN_EXPIRATION_MINUTES: int = 60
+    
+    SUPER_USER_EMAIL: EmailStr
+    SUPER_USER_PASSWORD: SecretStr
     
     
 class DocumentsConfig(BaseConfig):
