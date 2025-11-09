@@ -1,7 +1,7 @@
-import axios from "axios";
+import api from "./utils";
 
 export async function getUsers() {
-    const response = await axios.get('http://localhost:8000/api/users');
+    const response = await api.get('/users');
     return response.data;
 }
 
@@ -11,6 +11,6 @@ export async function createUser({ email, password, role }) {
         password,
         role,
     }
-    const response = await axios.post('http://localhost:8000/api/users', data)
+    const response = await api.post('/users', data)
     return response.data;
 }

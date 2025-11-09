@@ -1,4 +1,4 @@
-import axios from "axios";
+import api from "./utils";
 
 export async function getEvents({ limit, offset}) {
     const params = {
@@ -7,7 +7,7 @@ export async function getEvents({ limit, offset}) {
         sort_desc: true,
     };
 
-    const response = await axios.get("http://localhost:8000/api/events", { params });
+    const response = await api.get("/events", { params });
     return response.data;
 }
 
@@ -17,6 +17,6 @@ export async function createEvent({ title, date, link }) {
         date,
         link,
     }
-    const response = await axios.post('http://localhost:8000/api/events', data);
+    const response = await api.post('/events', data);
     return response.data;
 }

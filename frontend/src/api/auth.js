@@ -1,10 +1,10 @@
-import axios from "axios";
+import api from "./utils";
 
 export async function createToken({ email, password }) {
     const data = {
         email,
         password,
     }
-    const response = await axios.post('http://localhost:8000/api/auth/token', data);
+    const response = await api.post('/auth/token', data);
     return response.data.access_token;
 }

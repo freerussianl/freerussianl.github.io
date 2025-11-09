@@ -1,4 +1,4 @@
-import axios from "axios";
+import api from "./utils";
 
 export async function getArticles({ limit, offset}) {
     const params = {
@@ -7,7 +7,7 @@ export async function getArticles({ limit, offset}) {
         sort_desc: true,
     };
 
-    const response = await axios.get("http://localhost:8000/api/articles", { params });
+    const response = await api.get("/articles", { params });
     return response.data;
 }
 
@@ -17,6 +17,6 @@ export async function createArticle({ title, link }) {
         title,
         link,
     }
-    const response = await axios.post('http://localhost:8000/api/articles', data);
+    const response = await api.post('/articles', data);
     return response.data;
 }
