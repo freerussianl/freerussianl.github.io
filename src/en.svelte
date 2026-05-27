@@ -351,11 +351,6 @@
           >secretary</span
         >
       </p>
-      <p>
-        <span class="black">Olga Wester — </span><span class="blue"
-          >treasurer</span
-        >
-      </p>
       <br />
     </div>
   </div>

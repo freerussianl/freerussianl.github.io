@@ -341,11 +341,6 @@
           >секретарь</span
         >
       </p>
-      <p>
-        <span class="black">Ольга Вестер — </span><span class="blue"
-          >казначей</span
-        >
-      </p>
       <br />
     </div>
   </div>
