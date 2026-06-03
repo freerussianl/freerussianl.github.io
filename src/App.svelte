@@ -478,23 +478,6 @@
       </div>
       <br>   <br>
       <div>
-        <h1 class="maintitle">Blijf op de hoogte</h1>
-        <div class="button_container">
-          <input
-            type="email"
-            bind:value={email}
-            placeholder="naam@freerussia.nl"
-            class="email"
-          />
-          <button on:click={handleSubscribe} class="header_language"
-            >&#65291</button
-          >
-        </div>
-
-        <p class="past">Schrijf je in voor onze nieuwsbrief</p>
-      </div>
-      <br>   <br>
-      <div>
         <hr />
         <h1 class="maintitle">Partners</h1>
         <div class="links-container">
