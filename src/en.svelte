@@ -443,24 +443,6 @@
     </div>
   </div>
   <br><br>
-
-  <div>
-    <br />
-    <h1 class="maintitle">Stay informed</h1>
-    <div class="button_container">
-      <input
-        type="email"
-        bind:value={email}
-        placeholder="naam@freerussia.nl"
-        class="email"
-      />
-      <button on:click={handleSubscribe} class="header_language">&#65291</button
-      >
-    </div>
-    <p class="past">Sign up for our newsletter</p>
-  </div>
-  <br><br>
-
   <div>
     <hr />
     <h1 class="maintitle">Partners</h1>
